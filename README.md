@@ -9,3 +9,10 @@ and outline code step by step. All code in this repo was written by hand by the 
 Each step was tested by running it and checking its outputs against expected values
 (see AI_USE.md for prompts and tests).
 
+## For Code Checkpoint: Data Generation Code lies in data_generation_pilot.ipynb file.
+
+## AI and human contributions
+Codex (GPT-6.1 Sol & GPT-6 Astra) was used to draft an implementation design for generating story data using Ollama Qwen 3-4B
+and outline code step by step. Each step was tested by the team by running it and checking its outputs against expected values.
+(see AI_USE.md).
+
