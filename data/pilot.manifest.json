@@ -1,0 +1,36 @@
+{
+  "run_id": "df89db73de21bee8",
+  "config": {
+    "model": "qwen3:4b",
+    "url": "http://localhost:11434",
+    "emotions": [
+      "desperate",
+      "nervous",
+      "surprised",
+      "calm",
+      "angry",
+      "loving",
+      "sad",
+      "afraid",
+      "inspired",
+      "happy",
+      "guilty",
+      "proud",
+      "frustrated",
+      "hopeful"
+    ],
+    "topics": [
+      "A neighbor starts a renovation project",
+      "An adult child moves back in with their parents"
+    ],
+    "stories_per_cell": 2,
+    "temperature": 0.8,
+    "base_seed": 180,
+    "prompt_version": "3-paper-prompt-count-slots",
+    "user_message": "Write the stories now. /no_think",
+    "max_attempts": 3,
+    "cleanup": "strip-reasoning,strip-story-markers,strict-count",
+    "prompt_template": "Write 2 different stories based on the following premise.\nTopic: {topic}\nThe story should follow a character who is feeling {emotion}.\nFormat the stories like so:\n<NEW STORY>\n[story 1]\n<NEW STORY>\n[story 2]\nThe paragraphs should each be a fresh start, with no continuity. Try to make them diverse and not use the same turns of phrase. Across the different stories, use a mix of third-person narration and first-person narration.\nIMPORTANT: You must NEVER use the word '{emotion}' or any direct synonyms of it in the stories. Instead, convey the emotion ONLY through:\n- The character's actions and behaviors\n- Physical sensations and body language\n- Dialogue and tone of voice\n- Thoughts and internal reactions\n- Situational context and environmental descriptions\nThe emotion should be clearly conveyed to the reader through these indirect means, but never explicitly named."
+  },
+  "created_utc": "2026-11-07T02:37:55.853420+00:00"
+}
