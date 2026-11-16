@@ -1,0 +1,29 @@
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data and outputs (see emotion_vector_pipeline/README.md).
+# The dataset ZIP in emotion_vector_pipeline/data/ is committed; copies extracted from it are not.
+emotion_vector_pipeline/data/generation_v1/
+emotion_vector_pipeline/data/*.jsonl
+emotion_vector_pipeline/outputs/
+outputs/
+
+# Large artifacts: activation/vector archives from Google Drive and model weights
+qwen3_8b_emotion_activations_vectors_*.zip
+*.npz
+*.safetensors
+*.pt
+*.pth
+*.gguf
