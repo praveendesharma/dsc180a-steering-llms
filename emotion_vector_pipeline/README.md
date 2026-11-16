@@ -1,6 +1,6 @@
 # Qwen3-8B Emotion Vector Pipeline
 
-Member 1’s dataset and vector-construction pipeline for the DSC 180A replication of [*Emotion Concepts and their Function in a Large Language Model*](https://arxiv.org/abs/2604.07729), using Qwen3-8B.
+Member 1’s (Praveen) dataset and vector-construction pipeline for the DSC 180A replication of [*Emotion Concepts and their Function in a Large Language Model*](https://arxiv.org/abs/2604.07729), using Qwen3-8B.
 
 The pipeline generates stories that convey emotions indirectly, supports manual inspection of random samples, extracts residual-stream activations, and constructs one direction per emotion at every decoder block. These artifacts support the team’s validation, geometry, context, and steering experiments.
 
