@@ -1,6 +1,11 @@
 # dsc180a-steering-llms
 Repo for DSC 180A Fall 2026 Quarter 1 project
 
+## For Emotion Data and Vectors:
+Navigate to `/emotion_vector_pipeline` and peruse the `README.md` file in it.
+
+---
+
 ## For Code Checkpoint: Code lies in the playground.ipynb file.
 
 ## AI and human contributions
