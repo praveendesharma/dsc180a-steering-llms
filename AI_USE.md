@@ -37,3 +37,25 @@
 - Parsing and storage: inspected returned text and saved story records for correct separation and removal of formatting markers.
 - Dataset structure: checked the pilot’s story counts and intended labels against the 14 × 2 × 2 design.
 - Content: manually inspected stories for emotional clarity, premise adherence, explicit emotion language, and repeated phrasing.
+
+## 2026-11-16 — Repo reorganization after code checkpoint feedback
+
+**Tool:** Claude Code (Claude Opus 5.5, terminal)
+
+**Prompts used (summary, not verbatim):**
+
+- Shared the TA's checkpoint feedback (2/4: README missing setup, data, and run steps; no folder structure) and asked what was expected.
+- Asked Claude Code to add a `.gitignore`, fill in the README from what is already in the repo, organize the code into folders, log the work here, and commit each step separately under my name.
+- Asked what the difference between `src/` and `notebooks/` is and how to organize them.
+
+**What AI produced vs. what we wrote:**
+
+- Claude Code wrote `.gitignore` and this entry, created `results/`, and rewrote `README.md` using information from the old README, `requirements.txt`, and `emotion_vector_pipeline/README.md`.
+- Claude Code moved `playground.ipynb` to `notebooks/` and moved our existing model-loading and `chat()` code into `src/model.py`. Our original comments were kept. The only logic change: `chat()` now takes `model` and `tok` as arguments instead of reading globals, and uses `model.device`.
+- Claude Code did not change `emotion_vector_pipeline/` or `archive/`.
+
+**How the changes were tested:**
+
+- Notebook after the move: re-ran `notebooks/playground.ipynb` top to bottom from `notebooks/` → `28 1024`, `torch.Size([1, 14])`, `29`, `torch.Size([1, 14, 1024])`, and the same greedy-decoded sentence as on 2026-11-06 ("A desperate person, trapped in a moment of crisis, searches desperately for hope.").
+- `.gitignore`: `git ls-files -ci --exclude-standard` → no tracked files ignored. `git check-ignore` → extracted JSONL files, `outputs/`, `.npz` files and the Drive archive are ignored; the committed dataset ZIP, `archive/data/` and `results/` are not.
+- README data steps: ran the unzip and copy commands on a copy of the dataset ZIP → `data/emotion_stories_qwen_full1120.jsonl` has 1,120 lines, matching the dataset size.
