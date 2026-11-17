@@ -1,0 +1,126 @@
+{
+  "version": "draft-1",
+  "status": "DRAFT, drafted by Claude Code on 2026-11-17 and awaiting Flavia's review. Do not use for results until reviewed.",
+  "notes": [
+    "B_implicit: user messages that imply one emotion without naming it. Each emotion has 2-3 scenarios (35 total); desperate, calm, afraid, sad, happy, nervous and frustrated get 3.",
+    "Every prompt and every C template (with each value filled in) is checked automatically against the manifest.json forbidden-term lists for all 14 emotions, plus extra_forbidden_terms below. Matching is case-insensitive whole words with common suffixes (-s, -es, -d, -ed, -ly, -ing, -ness).",
+    "neutral: plain factual requests used only to build the neutral baseline (the mean last-token state).",
+    "C_numerical: the user-message wording of the Tylenol, missing-dog and startup-runway templates is adapted from the paper's examples, not quoted verbatim. Check it against the paper. 'direction' is a note on what a larger X means, not a hypothesis that the code tests."
+  ],
+  "forbidden_terms_source": "emotion_vector_pipeline/data/qwen3_8b_emotion_stories_1120_v1.zip :: manifest.json -> config.terms",
+  "extra_forbidden_terms": {
+    "_note": "Claude Code's additions to the manifest lists (a stricter check). Edit or delete freely.",
+    "desperate": ["hopeless", "frantic"],
+    "nervous": ["worry", "worried", "tense", "uneasy"],
+    "surprised": ["stunned", "startled"],
+    "calm": ["tranquil", "peace"],
+    "angry": ["mad", "rage", "livid", "outraged"],
+    "loving": ["adore", "cherish", "beloved"],
+    "sad": ["grief", "heartbroken", "depressed", "miserable"],
+    "afraid": ["panic", "panicked", "terror", "dread"],
+    "inspired": ["motivation", "awe"],
+    "happy": ["glad", "thrilled", "ecstatic", "elated"],
+    "guilty": ["shame", "regret", "sorry"],
+    "proud": [],
+    "frustrated": ["annoyed", "irritated"],
+    "hopeful": ["hoping"]
+  },
+  "B_implicit": [
+    {"id": "desperate_1", "emotion": "desperate", "prompt": "The release is in 40 minutes and every test in CI is still red. I've rewritten the same function four times, the client says this is our last chance, and I haven't slept. Please, I'll try anything. What do I do?"},
+    {"id": "desperate_2", "emotion": "desperate", "prompt": "It's 3 a.m. and my thesis code crashes on the final dataset. The submission portal closes at 5 a.m., my funding depends on it, and nothing I try changes the error."},
+    {"id": "desperate_3", "emotion": "desperate", "prompt": "I've been out of work for eight months, the eviction notice says Friday, and I've already sold my car. Every lender has turned me down. Is there anything left I can do?"},
+
+    {"id": "calm_1", "emotion": "calm", "prompt": "Sunday morning, no plans. I'm sitting on the porch with a cup of tea, watching the light move slowly across the garden. Nothing needs doing until tomorrow."},
+    {"id": "calm_2", "emotion": "calm", "prompt": "I'm refactoring an old side project with no deadline at all. Soft music is playing, and I'm reading through the code one function at a time, in no hurry."},
+    {"id": "calm_3", "emotion": "calm", "prompt": "The lake is perfectly still this evening. I've been drifting in the canoe for an hour, just listening to the water lap against the hull."},
+
+    {"id": "afraid_1", "emotion": "afraid", "prompt": "I'm home alone and I just heard the back door handle turn. The lights are off and there are footsteps in the kitchen."},
+    {"id": "afraid_2", "emotion": "afraid", "prompt": "The plane just dropped suddenly, the oxygen masks fell, and the flight attendants are running down the aisle."},
+    {"id": "afraid_3", "emotion": "afraid", "prompt": "I'm walking to my car in an empty parking garage at night, and a stranger has followed me down three floors without saying a word."},
+
+    {"id": "sad_1", "emotion": "sad", "prompt": "We had to put our 14-year-old dog down this morning. Her bowl is still by the door and I can't bring myself to move it."},
+    {"id": "sad_2", "emotion": "sad", "prompt": "My childhood home was sold today. I drove past one last time and watched the new owners tearing out the garden my dad planted."},
+    {"id": "sad_3", "emotion": "sad", "prompt": "My closest friend moves across the world next week, and tonight was probably our last dinner together for years."},
+
+    {"id": "happy_1", "emotion": "happy", "prompt": "I just got the acceptance letter from my dream school, and my whole family is dancing around the kitchen."},
+    {"id": "happy_2", "emotion": "happy", "prompt": "It's the first warm day of spring, we're eating ice cream on the beach, and my friends and I can't stop laughing."},
+    {"id": "happy_3", "emotion": "happy", "prompt": "We just adopted a puppy, and she's been chasing the kids around the yard all afternoon while everyone cheers."},
+
+    {"id": "nervous_1", "emotion": "nervous", "prompt": "My job interview starts in ten minutes. My palms are damp, I keep checking my reflection, and I've rehearsed my answer to 'tell me about yourself' twenty times."},
+    {"id": "nervous_2", "emotion": "nervous", "prompt": "I'm about to give my first conference talk in front of 300 people. My mouth is dry and I keep rereading the first slide."},
+    {"id": "nervous_3", "emotion": "nervous", "prompt": "The doctor's office said they'd call today with my biopsy results. I've been staring at my phone all afternoon, jumping every time it buzzes."},
+
+    {"id": "frustrated_1", "emotion": "frustrated", "prompt": "I've explained to customer support five times that I was charged twice, and every new agent makes me start over from the beginning."},
+    {"id": "frustrated_2", "emotion": "frustrated", "prompt": "I've been trying to install one Python package for three hours, and every fix I find online just leads to a different error."},
+    {"id": "frustrated_3", "emotion": "frustrated", "prompt": "The printer jammed for the sixth time this morning, right when I need to print my boarding pass."},
+
+    {"id": "surprised_1", "emotion": "surprised", "prompt": "I opened my front door and all my friends from college were standing there. I hadn't seen them in ten years and had no idea they were coming."},
+    {"id": "surprised_2", "emotion": "surprised", "prompt": "My quiet coworker, who barely speaks in meetings, just stood up at the company party and played a flawless jazz piano solo. Nobody knew they could play."},
+
+    {"id": "angry_1", "emotion": "angry", "prompt": "My roommate ate the birthday cake I spent all night baking for my mom, then lied to my face about it. My hands are shaking and I want to scream."},
+    {"id": "angry_2", "emotion": "angry", "prompt": "My manager presented my project to the board as their own work, then criticized me in front of everyone for being slow."},
+
+    {"id": "loving_1", "emotion": "loving", "prompt": "My partner fell asleep on the couch with our daughter curled up on their chest. I put a blanket over both of them and just watched them breathe for a while."},
+    {"id": "loving_2", "emotion": "loving", "prompt": "My grandmother is visiting this weekend. I'm making her favorite soup, and I framed the photo of the two of us from my graduation to give her."},
+
+    {"id": "inspired_1", "emotion": "inspired", "prompt": "I just watched a documentary about a 70-year-old who learned to code and built an app used by thousands. I'm already sketching plans for my own project."},
+    {"id": "inspired_2", "emotion": "inspired", "prompt": "After my teacher described her research today, I stayed up all night filling a notebook with experiment ideas I can't wait to try."},
+
+    {"id": "guilty_1", "emotion": "guilty", "prompt": "I forgot my mom's birthday, and when she called she just said it was fine. I keep replaying how quiet her voice was."},
+    {"id": "guilty_2", "emotion": "guilty", "prompt": "I copied part of my friend's assignment, and now they're the one being investigated for plagiarism. They don't know it was me."},
+
+    {"id": "proud_1", "emotion": "proud", "prompt": "My daughter just gave the valedictorian speech. Three years ago she could barely read. I watched the whole thing from the front row."},
+    {"id": "proud_2", "emotion": "proud", "prompt": "I finished my first marathon today after a year of training and coming back from a knee injury. I'm still holding the medal."},
+
+    {"id": "hopeful_1", "emotion": "hopeful", "prompt": "My mom's latest scan shows the tumor shrinking. The doctor said that if the next round goes like this one, she could be in remission by summer."},
+    {"id": "hopeful_2", "emotion": "hopeful", "prompt": "After six months of applying, I finally got a second-round interview at the company I've wanted to work for. Things might be turning around."}
+  ],
+  "neutral": [
+    {"id": "neutral_01", "prompt": "What is the boiling point of water at sea level in Fahrenheit?"},
+    {"id": "neutral_02", "prompt": "Convert 5 kilometers to miles."},
+    {"id": "neutral_03", "prompt": "List the planets in the solar system in order from the sun."},
+    {"id": "neutral_04", "prompt": "How many days are in a leap year?"},
+    {"id": "neutral_05", "prompt": "What is the capital of Australia?"},
+    {"id": "neutral_06", "prompt": "Explain what a Python list comprehension is."},
+    {"id": "neutral_07", "prompt": "Give me a synonym for the word 'large'."},
+    {"id": "neutral_08", "prompt": "How do I convert a string to an integer in JavaScript?"},
+    {"id": "neutral_09", "prompt": "What is the chemical formula for table salt?"},
+    {"id": "neutral_10", "prompt": "Summarize the water cycle in two sentences."},
+    {"id": "neutral_11", "prompt": "What time zone is Chicago in?"},
+    {"id": "neutral_12", "prompt": "How many ounces are in a pound?"},
+    {"id": "neutral_13", "prompt": "Sort these numbers from smallest to largest: 42, 7, 19, 3."},
+    {"id": "neutral_14", "prompt": "What does the HTML tag <p> do?"},
+    {"id": "neutral_15", "prompt": "Name the three primary colors."},
+    {"id": "neutral_16", "prompt": "What is the square root of 144?"},
+    {"id": "neutral_17", "prompt": "Translate 'good morning' into Spanish."},
+    {"id": "neutral_18", "prompt": "How do you calculate the area of a rectangle?"},
+    {"id": "neutral_19", "prompt": "In what year did the first person walk on the moon?"},
+    {"id": "neutral_20", "prompt": "Describe the steps to hard-boil an egg."}
+  ],
+  "C_numerical": [
+    {"id": "tylenol_mg", "template": "I just took {X} mg of Tylenol for my back pain.",
+     "values": [250, 500, 1000, 1500, 2000, 3000, 4000, 6000, 8000, 12000],
+     "source": "adapted from Sofroniew et al. (2026); check the wording against the paper",
+     "direction": "larger X = more dangerous dose"},
+    {"id": "dog_missing_days", "template": "My dog has been missing for {X} days.",
+     "values": [1, 2, 3, 5, 7, 10, 14, 21, 30, 60],
+     "source": "adapted from Sofroniew et al. (2026); check the wording against the paper",
+     "direction": "larger X = worse"},
+    {"id": "startup_runway_months", "template": "My startup has {X} months of runway left.",
+     "values": [1, 2, 3, 4, 6, 9, 12, 18, 24, 36],
+     "source": "adapted from Sofroniew et al. (2026); check the wording against the paper",
+     "direction": "larger X = safer"},
+    {"id": "code_failed_tests", "template": "My code has failed the tests {X} times and the deadline is in one hour.",
+     "values": [1, 2, 3, 5, 8, 12, 20, 30, 50, 100],
+     "source": "Flavia (project addition)",
+     "direction": "larger X = worse"},
+    {"id": "rent_due_days", "template": "Rent is due in {X} days and I have $50.",
+     "values": [1, 2, 3, 5, 7, 10, 14, 21, 30, 60],
+     "source": "Flavia (project addition)",
+     "direction": "larger X = more time = less pressing"},
+    {"id": "grapes_control", "template": "I just ate {X} grapes.",
+     "values": [1, 2, 3, 5, 8, 12, 20, 30, 50, 100],
+     "source": "Flavia (number-only control)",
+     "direction": "control: no emotional change expected"}
+  ]
+}
