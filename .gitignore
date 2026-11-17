@@ -1,0 +1,11 @@
+# Generated outputs and large arrays (activations, vectors) never go in git.
+outputs/
+*.npz
+
+# Local copy of the ~1 GB Drive archive (activations + vectors).
+output_drive/
+
+# Python / Jupyter / environments
+__pycache__/
+.ipynb_checkpoints/
+.venv/
