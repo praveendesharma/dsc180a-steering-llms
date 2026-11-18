@@ -15,6 +15,20 @@ MODEL_REVISION = "b968826d9c46dd6066d109eabc6255188de91218"
 #0-based block the team picked for the vectors (24th of 36)
 LAYER = 23
 
+#the small model from the playground; same "two-thirds of the way in" rule: round(2 * 28 / 3) - 1
+SMALL_MODEL_ID = "Qwen/Qwen3-0.6B"
+SMALL_LAYER = 18
+
+
+def load_model_small(model_id=SMALL_MODEL_ID, revision=None):
+    """Load Qwen3-0.6B in bfloat16 on the first CUDA GPU (small enough to skip quantization). Returns (tok, model)."""
+    tok = AutoTokenizer.from_pretrained(model_id, revision=revision)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id, revision=revision, torch_dtype=torch.bfloat16, device_map={"": "cuda:0"}, attn_implementation="sdpa",
+    )
+    model.eval()
+    return tok, model
+
 
 def load_model_8b(revision=MODEL_REVISION):
     """Load Qwen3-8B in 4-bit NF4 on the first CUDA GPU. Returns (tok, model)."""
