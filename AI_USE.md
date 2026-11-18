@@ -78,3 +78,21 @@
 - **Not run:** Parts B/C on Qwen3-8B, which needs a CUDA GPU (Colab).
 
 **Human review still needed:** Flavia reviews `prompts.json`, approves which figures get committed, and checks the Part A interpretation.
+
+### 2026-11-17 (later): combined walkthrough notebook (Claude Code)
+
+**What Claude Code wrote:**
+- `validation_generalization/ABC_validation_walkthrough.ipynb` puts Parts A, B and C in one notebook. The code cells are the same as in the two separate notebooks.
+- New in this notebook:
+  - a "what / why" explanation before every code cell;
+  - a result cell and a "what it means" section for each part, plus a final summary;
+  - a `BC_MODE` switch: B/C run on a CUDA GPU, are skipped without one, or run as a CPU code check;
+  - a Part C check of expected directions (the paper's directions for its templates; Claude Code's proposals for ours);
+  - a check that the Part A numbers quoted in the text still match the run.
+- It also updated the folder README.
+
+**How it was tested (locally):**
+- **Default run (no CUDA):** all 80 cells run, and the 15 B/C cells print "skipped".
+- **Code-check run** (Qwen3-0.6B, random vectors): every cell runs. Part A reproduces the earlier numbers, and its documented-number check passes.
+- **Finding:** in the code-check run, random vectors still earned "supported" on 3 of 11 Part C expectations. The notebook text now says so.
+- **Not run:** Parts B and C on Qwen3-8B (no CUDA GPU here).

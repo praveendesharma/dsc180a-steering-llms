@@ -4,6 +4,7 @@ Member 2 (Flavia) · DSC 180A · reproduces Sofroniew et al. (2026) §1.2 on Qwe
 
 | File | What it does | Where it runs |
 | --- | --- | --- |
+| `ABC_validation_walkthrough.ipynb` | **All three parts in one notebook.** It explains each step (what it does and why it matters) and ends each part with a result cell and a "what it means" section. The code is the same as in the two notebooks below. | Colab GPU: A, B and C for real. Laptop: Part A only, with B/C skipped; `BC_MODE=dryrun` gives the CPU code check. |
 | `A_heldout_stories.ipynb` | **Part A.** Scores held-out stories with the emotion vectors at every block. Reports validation accuracy and AUROC, a label-permutation null, and a single test-split evaluation. | Local, CPU only; no model (about 40 s). |
 | `BC_prompt_probes_colab.ipynb` | **Parts B & C.** Reads block-23 states for implicit-emotion scenarios (B) and numerical templates (C). | Colab with an NVIDIA GPU (NF4 needs CUDA). `BC_DRY_RUN=1` gives a CPU code check. |
 | `prompts.json` | Part B scenarios, neutral prompts and Part C templates. **Draft, awaiting review.** | n/a |
@@ -21,6 +22,13 @@ By default that folder must contain `story_activations.npz` and `emotion_vectors
 Part B/C also reads the forbidden-term lists from `emotion_vector_pipeline/data/qwen3_8b_emotion_stories_1120_v1.zip` (committed).
 
 ## How to run
+
+**Everything in one notebook:** open `ABC_validation_walkthrough.ipynb` and *Run all*.
+- **On a Colab GPU runtime**, it runs Parts A, B and C for real (run the setup cell first and set `RUN_DIR`).
+- **On a laptop**, it runs Part A and prints "skipped" for the B/C cells.
+- **`BC_MODE=dryrun`** runs B/C as a CPU code check.
+
+The separate notebooks below remain available.
 
 **Part A (local):** use a Python environment with numpy, scikit-learn and matplotlib, then run all cells of `A_heldout_stories.ipynb`. Outputs go to `outputs/A/`.
 
@@ -61,6 +69,8 @@ Part B/C also reads the forbidden-term lists from `emotion_vector_pipeline/data/
 | Hook returns shape `(hidden,)` (1024 for 0.6B) | pass | BC §5 (dry run) |
 | Logits are unchanged with the hook attached and after removal; hook removed; hooked state = `hidden_states[24]` | max diffs 0.0 | BC §5 (dry run) |
 | Dry run repeated under transformers 4.57.6 (the extraction run's version; Colab pins <5) and 5.20.0 | both pass; identical B/C outputs | BC (dry run) |
+| Combined notebook, default laptop run (no CUDA): every cell runs; all 15 B/C cells print "skipped" | pass (34 s) | ABC |
+| Combined notebook, code-check run (`BC_MODE=dryrun`): every cell runs; the Part A numbers equal those quoted in its "what it means" text (checked in code) | pass (56 s) | ABC |
 
 Note: on transformers 5.x, `output_hidden_states=True` leaves a library output-capture hook on each block. The removal test therefore checks that *our* hook id is gone and that the block's hook set is back to what it was before. With 4.57.6 there are no library hooks.
 
