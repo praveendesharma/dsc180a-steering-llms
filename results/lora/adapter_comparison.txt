@@ -1,0 +1,6 @@
+# Output of notebooks/lora_compare.py (run on the Brev A4000, 2026-11-17)
+desperate firing range across emotions: -40.97 to -37.8
+calm firing range across emotions: 38.65 to 40.53
+cos(push_desperate, push_calm): 0.451
+cos(push_desp - push_calm, v_desp - v_calm): 0.138
+diff vs each emotion vector: [('desperate', 0.112), ('frustrated', 0.103), ('angry', 0.098), ('guilty', 0.084), ('sad', 0.059), ('afraid', 0.055), ('nervous', 0.033), ('surprised', 0.021), ('inspired', -0.062), ('proud', -0.067), ('hopeful', -0.073), ('loving', -0.086), ('happy', -0.122), ('calm', -0.127)]
