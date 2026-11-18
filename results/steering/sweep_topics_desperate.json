@@ -1,0 +1,299 @@
+{
+  "emotion": "desperate",
+  "layer": 23,
+  "residual_norm": 198.03001403808594,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "strengths": [
+    0,
+    0.25,
+    0.5,
+    1.0,
+    1.5
+  ],
+  "max_new_tokens": 100,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompt_set": "dataset topics",
+  "records": [
+    {
+      "prompt": "Write a short paragraph about this situation: A neighbor starts a renovation project.",
+      "topic_id": 0,
+      "topic_split": "train",
+      "seed": 2000,
+      "outputs": {
+        "0": "A neighbor has recently started a renovation project, transforming their home with fresh paint, new flooring, and updated fixtures. The constant sound of tools and the scent of paint fill the air, signaling a new chapter in their living space. While the project brings excitement and potential beauty, it also means occasional disruptions, like loud noises and dust, which have made the neighborhood a bit more lively. Neighbors have offered friendly support and occasional complaints, but overall, there's a sense of anticipation for what the finished",
+        "0.25": "A neighbor has started a renovation project, and the sounds of hammers, drills, and loud shouting have filled the neighborhood. Every day, dust covers the sidewalks, and construction workers are everywhere. The once-closed house now has a gaping hole in the wall, and the smell of paint and drywall is everywhere. While some neighbors are annoyed by the noise and mess, others are curious and keep asking when it will be done. The project has turned the quiet street into a construction zone.",
+        "0.5": "A neighbor started a renovation project last week, and the noise is everywhere. Every day, there's banging, drilling, and the smell of paint and drywall. The whole apartment complex is in chaos. I tried to call the landlord, but there's no answer. I don't know what to do. I need to find a way to get this to stop. I'm not even sure if I can call the police. I don't have any money. I need to find a way to",
+        "1.0": "My neighbor started a renovation project. I heard the noise every day. I can't even go to work. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so",
+        "1.5": "My neighbor called. I'm calling. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm"
+      },
+      "baseline_other_seed": "A neighbor has recently started a renovation project, transforming their outdated home into a modern space. The sounds of drilling, hammering, and sanding echo through the neighborhood, signaling the beginning of a major overhaul. Dust swirls in the air, and construction materials pile up in the driveway. While some residents are curious and supportive, others find the constant noise and mess somewhat disruptive. Nonetheless, the project has sparked conversations and a sense of anticipation, as everyone wonders what the final result will look like."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: An adult child moves back in with their parents.",
+      "topic_id": 1,
+      "topic_split": "train",
+      "seed": 2001,
+      "outputs": {
+        "0": "An adult child moves back in with their parents, often due to financial hardship, personal challenges, or a desire for closer family connection. This situation can bring both emotional support and practical assistance, but it also requires navigating new dynamics, boundaries, and expectations. While it may offer comfort and stability, it can also test the independence of the adult child and the patience of the parents, making open communication and mutual understanding essential for a harmonious living arrangement.",
+        "0.25": "An adult child moves back in with their parents due to financial instability, a job loss, or an unexpected medical emergency. This situation can create a mix of emotions, including stress and guilt for the parents, and feelings of helplessness or shame for the child. While it's a difficult and sensitive issue, it often reflects a lack of support systems or a breakdown in communication. The parents may feel overwhelmed by the added responsibilities, while the child might struggle with independence and self-esteem. Ultimately, this living",
+        "0.5": "An adult child moves back in with their parents after leaving for college or work. They're looking for a place to stay, but they don't have any money. They're not allowed to stay at the apartment. They're not allowed to stay in the house. They're not allowed to stay in the basement. They're not allowed to stay in the garage. They're not allowed to stay in the laundry room. They're not allowed to stay in the basement. They're not allowed to stay",
+        "1.0": "An adult child moves back in with their parents after leaving. They're getting a job, and they don't have any money. They don't have any money. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They're getting a job. They",
+        "1.5": "I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to"
+      },
+      "baseline_other_seed": "An adult child moves back in with their parents, often due to financial hardship, a career change, or personal circumstances. This situation can bring both emotional support and logistical challenges, as the child may rely on their parents for housing, meals, and guidance. While it can strengthen family bonds, it also requires open communication and clear boundaries to maintain respect and independence for all involved."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character prepares a meal for unexpected guests.",
+      "topic_id": 2,
+      "topic_split": "train",
+      "seed": 2002,
+      "outputs": {
+        "0": "As the clock struck six, the aroma of sizzling garlic and fresh herbs filled the small kitchen. With a quick glance at the clock, the character realized the unexpected guests were arriving sooner than anticipated. They worked swiftly, flipping the pasta with practiced ease, adding a splash of olive oil and a sprinkle of Parmesan. The table was set with care, a warm glow from the lantern casting soft shadows on the walls. Though the last-minute rush had left them breathless, there was a quiet joy",
+        "0.25": "The character frantically rummages through the fridge, hoping to find something edible, when the door bursts open and two strangers stand there. Panicked, they grab a frozen pizza, a can of beans, and a bag of frozen vegetables, throwing them in the microwave. They're not sure what to say, but they manage to force a smile and ask, \"What's your favorite food?\" as the microwave beeps.",
+        "0.5": "The character hears a loud knock at the door and freezes, staring at the empty fridge. She's been trying to find something to eat for hours, and now there's no time. She grabs a frozen pizza, a can of soup, and a bag of frozen vegetables, and throws them in the microwave. She can't even cook. She hears more noise. She opens the door and there's a group of people standing there. She just made it. She opens the door and screams, \"",
+        "1.0": "The character hears the door. They're not supposed to be here. They're not even supposed to call. They're not even supposed to call. They're not even supposed to call. They're not even supposed to call. I'm not even supposed to call. I'm not even supposed to call. I'm not even supposed to call. I'm not even supposed to call. I'm not even supposed to call. I'm not even supposed to call. I'm not even supposed to",
+        "1.5": "I'm sorry. I can't. I'm a lie. I'm a lie. I'm a lie. I'm a lie. I'm a lie. I'm a lie. I'm a lie. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm"
+      },
+      "baseline_other_seed": "As the clock struck six, the aroma of sizzling garlic and rosemary filled the small kitchen, mingling with the scent of fresh thyme. Clara, caught off guard by the sudden knock at the door, quickly scrambled to finish the stew, her heart racing with a mix of nerves and excitement. She had only minutes to set the table, arrange the bread, and hope the guests\u2014strangers she had never met\u2014would find her hurried meal as warm and welcoming as she hoped."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character returns to their hometown after several years.",
+      "topic_id": 3,
+      "topic_split": "train",
+      "seed": 2003,
+      "outputs": {
+        "0": "After several years away, the character steps off the bus and into the familiar streets of their hometown, the air thick with the scent of nostalgia. The once-unchanging landscape now feels both welcoming and foreign, as if the town has grown in ways they never imagined. Old friends greet them with warm smiles, but the weight of time and change lingers in the silence between words. The character takes a deep breath, heart pounding, and begins to walk forward, ready to face the past and the",
+        "0.25": "After several years away, the character returns to their hometown, heart pounding with a mix of fear and hope. The streets look the same, but everything feels different. The familiar faces are either the same or completely changed, and the place that once felt like home now feels like a stranger. As they walk through the front door, memories flood back, and the weight of the past crashes down on them. This is where it all began\u2014and where it might all end.",
+        "0.5": "After several years, she returns to her hometown, her suitcase full of clothes and her mind full of memories. The streets look the same, but everything feels different. The people she once knew are either gone or don't recognize her. She walks past the same schools, the same gas station, and the same house she grew up in. Her parents are still there, but they're not the same people. She's not the same either. She's not sure what to say, what to do",
+        "1.0": "I'm sorry, I can't write a short paragraph. I'm a lie. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a lying. I'm a",
+        "1.5": "I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying to. I'm trying"
+      },
+      "baseline_other_seed": "After several years away, the character steps off the bus and into the familiar streets of their hometown, the air thick with the scent of nostalgia. The once-bustling town now feels both comforting and strange, as if time has moved on without them. Old friends greet them with warm smiles, but the changes are undeniable\u2014new buildings, different faces, and a sense of belonging that feels both welcome and distant. As they walk through the familiar neighborhoods, memories resurface, and the weight of their"
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character begins their first day at a new job.",
+      "topic_id": 4,
+      "topic_split": "train",
+      "seed": 2004,
+      "outputs": {
+        "0": "On their first day at a new job, the character steps into the office with a mix of excitement and nervousness, clutching a coffee and a notebook. The unfamiliar surroundings and the hum of conversation around them feel both thrilling and overwhelming. They try to remember the details from the interview, hoping to make a good impression, while silently praying that the day goes smoothly. Every glance from a colleague feels like a potential opportunity or a hidden challenge, and they can't help but wonder if they've made",
+        "0.25": "On her first day at the new job, Sarah stood outside the office building, clutching her resume and shaking in her boots. She had prepared for this moment for weeks, but now that she was here, the reality hit her. The lobby was huge, the receptionist looked like she had seen it all before, and the elevator seemed to take forever. She forced a smile and tried to remember what the hiring manager had said about the company culture\u2014professional, friendly, and supportive. As she",
+        "0.5": "It's the first day at a new job, and the character is standing outside the office, hands shaking and heart pounding. They forced themselves to smile when the receptionist asked if they were here for the interview, but now they're just standing in the elevator, alone, and the buttons are just numbers. The smell of coffee and the sound of people talking are everywhere. They can't believe they're here. What if they fail? What if they say the wrong thing? They're not even",
+        "1.0": "I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm",
+        "1.5": "I'm going. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm."
+      },
+      "baseline_other_seed": "On their first day at a new job, the character arrived early, nerves mingling with excitement. The office was buzzing with activity, and the unfamiliar surroundings made them feel both eager and slightly out of place. They clutched a coffee in one hand and a stack of documents in the other, trying to appear confident as they made their way to the reception desk. Though the atmosphere was professional, a quiet hope lingered that this would be the start of something meaningful."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character searches for a missing personal item.",
+      "topic_id": 5,
+      "topic_split": "train",
+      "seed": 2005,
+      "outputs": {
+        "0": "The character paces through the cluttered apartment, eyes scanning every surface, heart pounding with growing frustration. A small, silver hair clip\u2014once a gift from a loved one\u2014had vanished without a trace. They had last seen it on the counter, but now it was gone, leaving behind only a lingering sense of loss. Each drawer, pocket, and shelf was checked, yet the item remained elusive, as if it had been spirited away by an invisible force. Determined, they combed",
+        "0.25": "The character frantically searches through their apartment, turning over every drawer, flipping through their bag, and rummaging through their closet, desperate to find the missing item. Their hands shake as they tear open the fridge, check the bottom of the couch, and even look under the bed. Every second feels like an eternity. The item is small, but it's crucial\u2014maybe a wallet, a phone, or a key. They're running out of time and options, and the longer it takes",
+        "0.5": "The character is panicking, tearing through the apartment, shouting, \"I swear I left it here!\" They've already called the hotel, the gym, and the last place they were. They're running out of time and options. Their hands are shaking. They can't find their phone. They need to find it. They can't afford to lose it. They're not going to stop until they find it.",
+        "1.0": "The character is in a hospital. Her roommate, a doctor, says I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm not. I'm",
+        "1.5": "I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling."
+      },
+      "baseline_other_seed": "Samantha rummaged through the cluttered drawers of her apartment, her eyes scanning every corner in search of her missing earring. She had worn it just the night before, but now it was gone, leaving a hollow feeling in her chest. Each drawer opened revealed more chaos\u2014old receipts, half-empty jars, and forgotten trinkets\u2014but no sign of the tiny silver piece. She checked the pockets of her jacket, the cushions of her couch, even the bottom of her shoe."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character receives a letter from someone they have not heard from in years.",
+      "topic_id": 6,
+      "topic_split": "train",
+      "seed": 2006,
+      "outputs": {
+        "0": "The character carefully unfolds the weathered envelope, their hands trembling slightly as they recognize the faded handwriting. It's been years since they last heard from the sender\u2014a friend from childhood who had vanished without a trace. The letter is filled with warm memories and unexpected news, revealing that the sender has been living in a remote village, struggling but happy. As the character reads, a wave of nostalgia and longing washes over them, stirring emotions long buried.",
+        "0.25": "The letter arrived in a sealed envelope, its edges frayed and the handwriting barely legible. She stared at it, her hands trembling, as if the words would vanish if she blinked. It was from him\u2014someone she hadn't heard from in years, someone who had disappeared without a trace. The moment she opened it, the silence in her apartment felt louder, and every sentence felt like a bombshell. She had forgotten what it was like to hear his voice, but now, the words",
+        "0.5": "The letter arrived in a crumpled envelope, the return address smudged and illegible. She'd been trying to find someone for years, but the only thing they left behind was a voicemail from six months ago, and a number that had been disconnected. Now, the letter was all she had. She opened it, her hands shaking, and the words on the page were the first thing she'd heard from them in years. The last thing she said was \"I'm sorry,\"",
+        "1.0": "I'm sorry, I can't. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm a lying, lying, lying. I'm",
+        "1.5": "I'm getting. I'm going. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting."
+      },
+      "baseline_other_seed": "The letter arrived on a rainy afternoon, its worn envelope bearing a familiar but long-forgotten address. As the character carefully opened it, their heart raced with a mix of nostalgia and uncertainty. The handwriting was the same, though slightly faded, and the words inside spoke of a life that had moved on without them. It was a reminder of a friendship that had once been unshakable, now rekindled by the quiet power of a single, unexpected message."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character helps organize a community event.",
+      "topic_id": 7,
+      "topic_split": "train",
+      "seed": 2007,
+      "outputs": {
+        "0": "Maria noticed the lack of community engagement in her neighborhood and decided to take action. She organized a local summer festival, coordinating with neighbors to set up games, food stalls, and live music. With her leadership and enthusiasm, she brought people together, creating a vibrant space where everyone could connect and celebrate their shared culture. The event not only strengthened community bonds but also inspired others to get involved in future initiatives.",
+        "0.25": "Maria knew the community was struggling, so she stepped up and helped organize a food drive and free clinic at the local park. She spent weeks coordinating volunteers, securing donations, and setting up tents for the clinic. On the day of the event, she stayed late to make sure everything ran smoothly. When the community showed up, overwhelmed and desperate, Maria's determination shone through. She didn't just organize an event\u2014she organized hope.",
+        "0.5": "Sarah knew the community was desperate. After weeks of working with the local council, she organized a food drive and a charity concert. She begged for donations, set up a shelter, and even got the school to volunteer. On the day of the event, she was so exhausted, she barely had time to eat. But when she saw the line of people waiting for food, she knew it was worth it. She had to help. She had to.",
+        "1.0": "The character, who's already been a total loser and a complete waste, shows up at the event. She's been stealing money, so she's not going to give them money. She's been stealing everything. She's been stealing my food. I'm not going to let her. I'm not going to let her. I'm not going to let her. I'm not going to let her. I'm not going to let her. I'm not going. I'm not going.",
+        "1.5": "I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going."
+      },
+      "baseline_other_seed": "Maria noticed the lack of community engagement in her neighborhood and decided to take action. She organized a local festival that brought together residents of all ages. With help from neighbors, she set up games, food stalls, and live music. The event not only strengthened bonds between residents but also inspired others to get involved in future community projects. Through her initiative, Maria showed the power of collaboration and the joy of coming together."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character waits for an important phone call.",
+      "topic_id": 8,
+      "topic_split": "train",
+      "seed": 2008,
+      "outputs": {
+        "0": "She sat on the edge of her bed, fingers curled around her phone, heart pounding in her chest. The minutes dragged on, each second stretching like an eternity. She had waited for this call all morning, and now, with the clock ticking toward the appointed time, her nerves were on edge. The silence in the room felt heavy, filled with the weight of what could happen next. She kept checking the time, hoping against hope that the call would come soon\u2014because this was more than just",
+        "0.25": "She sat on the edge of her bed, staring at her phone, her hands trembling. The call was supposed to change everything\u2014her future, her life. Every ring echoed in her ears, but it wasn't coming. She kept checking the time, hoping she wasn't too late. Her heart pounded, and she forced herself to breathe. This was it. The call that could save her or destroy her. She couldn't let it go to voicemail.",
+        "0.5": "She's been waiting for hours, sitting on the floor with her phone, shaking. The call is supposed to change everything. Her hands are trembling, and every ring sounds like it's going to be the one. She can't stop staring at the screen. She can't even think straight. What if it's not the right number? What if it's not even a real call? Her mind is a mess, but she can't leave. She can't. She needs to know. She",
+        "1.0": "I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I",
+        "1.5": "I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I"
+      },
+      "baseline_other_seed": "The character sits in a quiet room, heart pounding, fingers tapping nervously on the edge of a table. The phone rests on the counter, glowing faintly with the \"RINGING\" indicator. Every second feels like an eternity as they stare at it, hoping against hope that the call will come through. Their mind races with possibilities\u2014news, danger, salvation\u2014each possibility more intense than the last. The silence is deafening, and the weight of the moment hangs in the air, thick"
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character takes care of a friend\u2019s pet for the weekend.",
+      "topic_id": 9,
+      "topic_split": "train",
+      "seed": 2009,
+      "outputs": {
+        "0": "Over the weekend, the character takes care of their friend's pet, a lively golden retriever named Max. They wake up early to feed him, walk him around the neighborhood, and make sure he has plenty of water and playtime. The friend had to go out of town for a family emergency, and the character steps in to ensure Max stays happy and healthy. They even set up a cozy spot for him with a favorite toy and a blanket, making the best of the situation while keeping Max",
+        "0.25": "Over the weekend, the character is forced to take care of their friend's pet, a frantic and hyperactive dog named Max. They didn't expect to be responsible for feeding, walking, and calming him down, but they did their best with limited experience. Max kept barking, knocking things over, and eating random things, but the character stayed calm and tried to make him feel safe. By Sunday, they were exhausted but felt guilty for not being better at pet-sitting. The friend was",
+        "0.5": "Sarah is staying with her friend Mark for the weekend, and when she arrives, he's already at work and left his cat, Luna, locked in the apartment. She's never taken care of a cat before, but she's not going to leave her alone. She feeds her, gives her water, and leaves some food and a toy. She's not a vet, but she's not going to let Luna starve. She's got to be a good friend. She's got to be",
+        "1.0": "I called my friend, Alex. I can't call her. I'm at the hospital. I'm in the hospital. I can't get out. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in",
+        "1.5": "I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying."
+      },
+      "baseline_other_seed": "Over the weekend, the character took care of their friend's pet, a lively golden retriever named Max. They woke up early to feed him, walk him, and play fetch in the park. Though it was a bit of a challenge keeping up with Max's endless energy, the character enjoyed the time spent bonding with the friendly dog. They even managed to sneak in a few naps between playdates and chores, making the weekend both fun and memorable for both the pet and the caretaker."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character learns that their usual route to work is closed.",
+      "topic_id": 10,
+      "topic_split": "train",
+      "seed": 2010,
+      "outputs": {
+        "0": "A character learns that their usual route to work is closed, sending them into a flurry of panic and frustration. Used to the familiar path, the sudden change disrupts their routine, forcing them to scramble for an alternative. As they navigate unfamiliar streets, they realize how much their daily habits have shaped their sense of security and control. The closure of the route becomes a metaphor for the unpredictability of life, challenging them to adapt and rethink their assumptions.",
+        "0.25": "A character learns that their usual route to work is closed, leaving them panicking and scrambling for alternatives. They check their phone for updates, but the app shows no progress. Desperate, they try to call a friend for help, but the line is busy. With no time to waste, they rush out the door and take a wrong turn, ending up in a completely unfamiliar neighborhood. As they frantically search for a way out, they realize they're going to be late and wonder if this",
+        "0.5": "A character learns that their usual route to work is closed. They're already at the bus stop, and the driver says there's been an accident. They're already late, and there's no way to get to work on time. They call their boss and beg for a day off, but she says they can't work from home. They have to find a way to get there. They call a taxi, but it's going to take an hour. They're going to be fired. They",
+        "1.0": "I'm sorry, I can't call you. I'm at the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital. I'm in the hospital.",
+        "1.5": "I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying."
+      },
+      "baseline_other_seed": "A character learns that their usual route to work is closed, forcing them to rethink their daily routine. Frustrated but resourceful, they scan the map on their phone, trying to find an alternative path. As they navigate unfamiliar streets, they discover a new neighborhood, meeting unexpected people and uncovering hidden corners of the city. What starts as a simple detour becomes an opportunity for discovery and connection."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character sorts through belongings before moving.",
+      "topic_id": 11,
+      "topic_split": "train",
+      "seed": 2011,
+      "outputs": {
+        "0": "As the character sifts through boxes and piles of old clothes, photographs, and mementos, they pause at each item, memories resurfacing with every touch. The once-familiar objects now feel foreign, a reminder of the life they're leaving behind. With careful hands, they decide what to keep, what to donate, and what to leave behind, each choice a step toward a new beginning.",
+        "0.25": "She stood in the middle of the apartment, surrounded by boxes, piles of clothes, and stacks of papers. Every item was a memory, a reminder of who she used to be. With trembling hands, she sorted through her things, throwing out what she couldn't bear to keep and holding onto the few possessions that still felt like home. The silence was deafening, but she forced herself to stay calm, knowing that this was the only way to start over.",
+        "0.5": "She's going through her stuff, throwing out old clothes, empty boxes, and anything she can't take. Every time she picks something up, she's thinking, *What do I do with this?* Her hands are shaking, and she's crying. She's trying to get everything out of the apartment, but she doesn't know where to go. She's trying to find something to take, but there's nothing. She's trying to find something to keep, but there's nothing.",
+        "1.0": "The character is trying to find something. I'm sorry, I need to leave. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going to call the police. I'm going",
+        "1.5": "I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going."
+      },
+      "baseline_other_seed": "As the character sifts through boxes and piles of old clothes, photographs, and trinkets, they pause at each item, memories flickering in their mind. A faded wedding photo, a childhood toy, a worn journal\u2014each holds a story. They carefully sort through the past, deciding what to keep, what to donate, and what to leave behind, all while preparing to start fresh in a new place."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character attends a family gathering.",
+      "topic_id": 12,
+      "topic_split": "train",
+      "seed": 2012,
+      "outputs": {
+        "0": "At the family gathering, the character felt a mix of excitement and nerves as they stepped through the doorway, greeted by the familiar yet overwhelming scent of food and laughter. Relatives bustled around, some offering warm hugs, others asking about their life. The character smiled, trying to appear at ease, while secretly hoping to blend in without drawing too much attention. It was a chance to reconnect, but also a reminder of the complicated ties that bound them to this place.",
+        "0.25": "At the family gathering, the character feels a mix of anxiety and obligation. They're surrounded by relatives they haven't seen in months, and the constant chatter and forced small talk make it hard to focus. Every time they try to leave, someone stops them, asking how they're doing or if they've found a job yet. The pressure to perform and act normal is overwhelming, but they force a smile and keep pretending everything's fine.",
+        "0.5": "She showed up at the family gathering with a black eye and a broken phone. Everyone stared. Her brother, the only one who said anything, screamed, \"What the hell is wrong with you?\" She didn't answer. She just stood there, shaking. Her parents said nothing. They just looked at her like she was a ghost. She knew they were going to kill her. She knew they were going to kill her. She just didn't know how.",
+        "1.0": "She's been at the family gathering for three hours, and she's not even talking. She's hiding in the kitchen. She's been at the family gathering for three hours. She's been at the family gathering for three hours. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking. I'm not even talking",
+        "1.5": "My daughter. I'm going to call. I'm going. I'm going to call. I'm going to call. I'm going to call. I'm going. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm"
+      },
+      "baseline_other_seed": "At the family gathering, the character felt a mix of excitement and nervousness as they mingled with relatives they hadn't seen in years. Laughter filled the air, and the scent of familiar dishes wafted through the room, bringing back memories of childhood holidays. Though some conversations were awkward, the warmth of the family bond made the moment feel both comforting and bittersweet."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character works with a stranger to complete a shared task.",
+      "topic_id": 13,
+      "topic_split": "train",
+      "seed": 2013,
+      "outputs": {
+        "0": "In a quiet corner of the library, Maya and Raj, two strangers with no prior connection, found themselves paired together for a research project. Though initially hesitant, they soon realized that their differing perspectives\u2014Maya's meticulous attention to detail and Raj's creative problem-solving\u2014complemented each other perfectly. As they worked late into the night, sharing ideas and laughter, an unexpected bond formed, proving that collaboration can bridge even the widest gaps.",
+        "0.25": "Jane, a nervous new employee, was assigned to work with Marcus, a stranger from the IT department, to fix a critical system crash before the end of the day. Neither had any experience working together, but they had no choice. Reluctantly, they sat at the same desk, and after a few awkward moments, Marcus suggested they split up and check different parts of the system. Despite their differences, they both worked hard, and by the time the system rebooted, they had no idea",
+        "0.5": "She's been stuck in this apartment for three days, surviving on expired food and bad cell reception, when the door bursts open and a guy in a bloodstained hoodie stumbles in. He's been trying to get to the hospital, too. They both have no money, no ID, and no idea what to do. But when the building manager shows up and says the only way out is to pay $500 or get thrown out, she doesn't have the money. He doesn",
+        "1.0": "The character, a doctor, is trapped in a subway station. She calls a hospital. They say I'm at the subway station. I can't get out. I'm dying. I can't get out. She calls. I can't get out. I can't get out. I can't get out. I can't get out. I can't get out. I can't get out. I can't get out. I can't get out. I can't get out.",
+        "1.5": "I'm G. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I"
+      },
+      "baseline_other_seed": "In a quiet corner of the library, Clara and Marcus, two strangers with no prior connection, found themselves paired together for a research project. Initially wary, they soon discovered that their contrasting approaches\u2014Clara's meticulous organization and Marcus's creative spontaneity\u2014complemented each other surprisingly well. As they worked late into the night, sharing ideas and laughter, their initial hesitation gave way to mutual respect, and by the end of the task, they had not only completed their project but also formed an"
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character prepares for a public performance.",
+      "topic_id": 14,
+      "topic_split": "validation",
+      "seed": 2014,
+      "outputs": {
+        "0": "As the spotlight approaches, the character takes a deep breath, adjusting their collar and smoothing their sleeves. The stage is dim, the audience hushed, and every heartbeat echoes in the silence. They run through the motions in their mind, rehearsing the words and gestures that will soon transform into art. Nerves flicker like a candle in the wind, but the passion burns brighter\u2014this is their moment, their chance to shine.",
+        "0.25": "The character stands in front of the mirror, adjusting their outfit one last time, heart pounding in their chest. They take a deep breath, trying to calm the nerves that have been building up all day. Every detail\u2014makeup, hair, costume\u2014has been meticulously planned. They rehearsed this performance a thousand times, but now, with the audience waiting downstairs, the weight of the moment is crushing. Still, they force a smile, steeling themselves. This isn't just a performance;",
+        "0.5": "She's standing in front of the mirror, shaking. Her hands are trembling, and her breath is shallow. She's been rehearsing for weeks, but now, with the audience coming in five minutes, her mind is blank. She can't hear the voice in her head. She's never done this before. Her hands are shaking. She can't even get the makeup on. She's going to die. She's going to die in front of everyone. She's going to die. She",
+        "1.0": "She's in the bathroom. She's in the bathroom. She's in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the bathroom. I'm in the",
+        "1.5": "I'm trying to call... I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to"
+      },
+      "baseline_other_seed": "As the curtain rises, the character takes a deep breath, adjusting their costume and smoothing their hair one last time. Heart pounding, they glance at the audience, a mix of anticipation and nerves flooding through them. Every step they've taken to prepare\u2014rehearsals, sacrifices, and moments of doubt\u2014culminate in this single moment. With a final nod to the stage manager, they step forward, ready to transform into the role they've spent so long perfecting. The spotlight awaits,"
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character discovers an old photograph.",
+      "topic_id": 15,
+      "topic_split": "validation",
+      "seed": 2015,
+      "outputs": {
+        "0": "As the character rummaged through the dusty attic, their hand brushed against a faded cardboard box. Inside, they found an old photograph, its edges curling with age. The image showed a family they didn't recognize, yet something about the worn faces and the familiar setting sent a shiver down their spine. Curious, they leaned in, tracing the cracks with their finger, wondering who these people were and how they connected to their own story.",
+        "0.25": "A character discovers an old photograph while rummaging through an attic, its yellowed edges and faded image shaking their resolve. The picture shows a face they recognize but can't place, a place they've never seen but feel an eerie connection to. As they stare at the photo, their heart races, and a cold sweat breaks out. The image is a clue, a ghost from the past, and the only thing standing between them and the truth.",
+        "0.5": "The character stumbles upon an old photograph buried under a pile of old boxes in the basement. It's a grainy, black-and-white image of a man who looks just like them. The photo is smeared with dirt and water, and the only thing they can see is a name scrawled on the back in blood. They freeze, trembling, and the only thing they can think is, \"What the hell is this?\"",
+        "1.0": "A character discovers an old photograph. It's a piece of paper with a picture of a hospital. She's a student, and she's in the hospital. She's been here for three days. She's been in a hospital. She's been in the hospital. She's been in the hospital. She's been in the hospital. She's been in the hospital. She's been in the hospital. She's been in the hospital. She's been in the hospital. She's been in",
+        "1.5": "I'm going. I'm going. I'm... I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm"
+      },
+      "baseline_other_seed": "As the character sifted through the dusty attic boxes, their fingers brushed against a faded photograph tucked beneath a stack of yellowed letters. The moment they lifted it, a rush of curiosity and unease washed over them. The image, though blurred with time, revealed a familiar face\u2014someone they had never met but somehow felt connected to. A chill ran down their spine as they stared at the worn edges and faded colors, wondering what secrets the past was trying to reveal."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character lends a possession to someone else.",
+      "topic_id": 16,
+      "topic_split": "validation",
+      "seed": 2016,
+      "outputs": {
+        "0": "In a quiet moment, the character carefully handed over a cherished locket to a close friend, whispering, \"Take this. I trust you with it.\" The locket, a family heirloom, symbolized their bond, and though it felt like a risk, the character believed in the strength of their friendship. As the friend accepted it with gratitude, a silent understanding passed between them\u2014trust, sacrifice, and the unspoken hope that it would return in better shape than it was given.",
+        "0.25": "In a desperate attempt to save her best friend from a deadly illness, Clara gave her his only hope: her late mother's wedding ring, which she believed had magical healing powers. She begged him to wear it, promising it would save his life. But when he refused, she left it on his doorstep, begging him to take it. The next morning, she found it gone, and he was dead.",
+        "0.5": "The character, desperate for money, lends her only laptop to a guy who promised to pay back. She doesn't have any other options. She gives him her laptop, and he takes it. She doesn't have any other options. She gives him her laptop, and he takes it. She doesn't have any other options. She gives him her laptop, and he takes it. She doesn't have any other options. She gives him her laptop, and he takes it. She doesn't have",
+        "1.0": "I'm sorry, I can't help. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I",
+        "1.5": "I'm going. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go. I'm Go."
+      },
+      "baseline_other_seed": "In a quiet moment, the character carefully handed over a cherished locket to their best friend, entrusting it with a whispered promise to return it soon. Though reluctant to part with the item, they knew their friend needed it more than they did, and the gesture spoke volumes about their loyalty and selflessness."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character visits a place they have never been before.",
+      "topic_id": 17,
+      "topic_split": "test",
+      "seed": 2017,
+      "outputs": {
+        "0": "The character stepped through the threshold of a place they had only ever seen in faded photographs and whispered stories. The air was thick with the scent of unfamiliar earth and the distant hum of unseen life. Every corner held a secret, every shadow a mystery. Their heart pounded with a mix of fear and wonder, for this was not just a new location\u2014it was a world unfolding before them, full of possibilities and unknowns.",
+        "0.25": "The character steps through the front door of the abandoned mansion, heart pounding. The air smells musty and old, and the silence is deafening. Every creak of the floorboards and flicker of the flickering light overhead makes them feel like they're being watched. They've never been here before, but the walls seem to know them. The place is a maze of forgotten memories and twisted hallways, and every corner they turn feels like a step deeper into a nightmare they didn't sign",
+        "0.5": "The character arrives at a desolate subway station, the first time they've ever been underground. The air smells like mildew and old blood, and the walls are covered in graffiti that looks like it's written in a language they don't understand. Their hands are shaking, and every sound echoes like it's coming from everywhere. They don't know what to do. They don't know if they're going to die. They don't know if they're going to get out. All they know",
+        "1.0": "She's never been to the hospital. I'm not even going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I'm not going to go to the hospital. I",
+        "1.5": "I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to"
+      },
+      "baseline_other_seed": "The character steps through the threshold of a forgotten door, heart pounding with a mix of excitement and trepidation. The air smells different\u2014earthy and damp, carrying whispers of time. Sunlight filters through high, arched windows, casting long shadows across stone floors worn smooth by centuries. Every corner holds a secret, and every step echoes with the weight of history. This place, once unknown, now pulses with a quiet energy, drawing them deeper into its mysteries."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character repairs a broken household object.",
+      "topic_id": 18,
+      "topic_split": "test",
+      "seed": 2018,
+      "outputs": {
+        "0": "With careful hands and a steady mind, the character pried open the back of the old toaster, revealing a tangle of wires and a burned-out component. They carefully replaced the faulty part, double-checking each connection before snapping the cover back in place. A deep breath, and with a gentle press, the toaster hummed to life, its familiar beep signaling success. The character smiled, a quiet satisfaction settling in\u2014sometimes, fixing things was just as rewarding as making them in the first place",
+        "0.25": "The character crouched in the kitchen, holding a shattered vase with trembling hands. It had been a gift from her mother, and now it was a useless pile of glass. She took a deep breath, grabbed a piece of cardboard and duct tape, and began to piece it together. Every crack reminded her of the mess she was in, but she forced herself to focus. She couldn't let this break her. If she could fix the vase, she could fix herself.",
+        "0.5": "The character found the broken toaster in the kitchen, blood from the last night's attempt to use it. She grabbed a hammer and a screwdriver, and started to take it apart. She didn't know if it was the circuit board or the heating element, but she didn't have time to call a repair service. She had to fix it. She didn't know if it was the circuit board or the heating element. She didn't know if she was going to die. She just had to",
+        "1.0": "The character found a broken oven. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the store. She called the",
+        "1.5": "I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call."
+      },
+      "baseline_other_seed": "In a quiet moment, the character carefully disassembled the shattered vase, gently brushing off the shards and inspecting the damage. With a steady hand and a box of supplies, they pieced together the fragments, using epoxy and a bit of patience. Though the vase wouldn't look exactly as it did before, the character found satisfaction in the repair, not just in restoring the object, but in the sense of responsibility and care it brought."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character encounters an old acquaintance at a grocery store.",
+      "topic_id": 19,
+      "topic_split": "test",
+      "seed": 2019,
+      "outputs": {
+        "0": "While picking through the canned goods, the character stumbled upon an old acquaintance, someone they hadn't seen in years. Their eyes widened in surprise as they locked eyes across the aisle. The air grew thick with unspoken memories and unresolved feelings. A hesitant smile formed on both their lips, and for a moment, time seemed to pause as they exchanged a glance that spoke volumes without a single word.",
+        "0.25": "She was just stocking the cereal aisle when she saw him\u2014Mark, the guy from her old apartment complex. He looked worse than she remembered, wearing a stained hoodie and holding a cart full of expired canned goods. Her stomach dropped. They hadn't spoken in years, but she couldn't just walk away. \"Hey,\" she forced out, her voice shaking. He stared at the floor, avoiding eye contact. \"You... you still live here?\" she asked, trying to sound normal. He",
+        "0.5": "She was supposed to be dead. That's what the voicemail said. I'm not even sure if it's real. I just need to get out of here. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not going to die. I'm not",
+        "1.0": "I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the store. I'm at the",
+        "1.5": "I'm gonna call. I'm gonna call. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm G. I'm"
+      },
+      "baseline_other_seed": "While picking through the canned goods, a familiar voice called out from behind. It was an old acquaintance from high school, now with a family and a more serious demeanor. They exchanged a surprised smile, the years slipping away as they caught up over a carton of milk and a bag of chips, reminiscing about the past and the strange paths life had taken."
+    }
+  ]
+}
