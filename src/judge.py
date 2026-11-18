@@ -8,6 +8,7 @@ Needs ANTHROPIC_API_KEY, from the environment or from the repo's .env file.
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import anthropic
@@ -102,3 +103,29 @@ def repetition_rate(text):
     words = re.findall(r"[a-z']+", text.lower())
     pairs = list(zip(words, words[1:]))
     return 1 - len(set(pairs)) / len(pairs) if pairs else 0.0
+
+
+def run_votes(client, jobs, votes, path, n_votes=3, workers=8, log=print):
+    """Judge each (key, prompt, reply) job n_votes times. Answers go into `votes` as "key|vote" and are saved to `path`."""
+    todo = [(f"{key}|{v}", prompt, reply) for key, prompt, reply in jobs for v in range(n_votes)
+            if f"{key}|{v}" not in votes]
+    log(f"{len(todo)} judge calls to run")
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(check, client, prompt, reply): key for key, prompt, reply in todo}
+        for n, fut in enumerate(as_completed(futures), 1):
+            votes[futures[fut]] = fut.result()
+            if n % 50 == 0 or n == len(futures):
+                path.write_text(json.dumps(votes, indent=1))  #save as we go
+                log(f"{n}/{len(futures)} done")
+    return votes
+
+
+def reply_scores(votes, key, n_votes=3):
+    """Majority-vote points (desperation, coherence) for one reply from its saved votes."""
+    return scores(majority([votes[f"{key}|{v}"] for v in range(n_votes)]))
+
+
+def unanimous_share(votes, keys, n_votes=3):
+    """Share of check answers on which all votes agree."""
+    same = [len({votes[f"{k}|{v}"][name] for v in range(n_votes)}) == 1 for k in keys for name in CHECKS]
+    return sum(same) / len(same)
