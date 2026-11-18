@@ -92,3 +92,30 @@
 - Control: a second unsteered reply with a different seed → desperation 0, coherence 100, the same as the matched unsteered replies.
 - LoRA: trainable parameters 16,384 (= 12,288 + 4,096) → matches rank 1 on one `down_proj`. Adapter scale ×0 → reply identical to the model with the adapter off (assert passed). Validation loss on held-out stories: desperate 1.467 → 1.276; calm 1.619 → 1.389.
 - Cosine baseline: 2,000 random directions vs. the desperate vector → std 0.0154 (expected 1/64 ≈ 0.0156).
+
+## 2026-11-17 (later) — Held-out test, dataset prompts, layer sweep, Qwen3-0.6B
+
+**Tool:** Claude Code (Claude Opus 5.5, terminal). Claude Opus 5.5 is again the checklist judge.
+**Conversation:** same Claude Code session as the entry above
+
+**Prompts used (summary, not verbatim):**
+
+- Asked for a proof test that uses Praveen's dataset rather than only made-up everyday prompts.
+- Asked for the block-23 choice to be justified with the paper's reasoning and with our own data.
+- Pointed out that the playground used Qwen3-0.6B and asked for the same evaluation, including LoRA, on it.
+
+**What AI produced vs. what we wrote:**
+
+- Claude Code wrote `src/extract.py`, extended `src/steering.py` (Qwen3-0.6B loader) and `src/judge.py` (shared voting helpers), and wrote `notebooks/steering_dataset.ipynb`, `notebooks/qwen0p6b.ipynb`, `notebooks/probe_layers.ipynb` and `notebooks/judge_more.ipynb`. It ran them on a Brev RTX A4000 and judged the outputs.
+- Mohak chose what to test: the dataset's own topics as prompts, a data-based check of the layer, and the Qwen3-0.6B comparison.
+- The Qwen3-0.6B vectors follow notebook 03's recipe (Praveen's), rebuilt for the smaller model.
+
+**How the code was tested:**
+
+- Qwen3-0.6B model: 28 blocks, hidden size 1,024, MLP 3,072 → matches its config. Activations shape `(1120, 28, 1024)`; all 14 × 28 vectors have norm 1 and average to zero across emotions (asserts passed).
+- Qwen3-0.6B steering checks: strength 0 reproduces the no-hook reply (passed); strength 0.5 should add 0.5 × 119.1 = 59.55 per token → measured 59.53–59.56 (passed).
+- Qwen3-8B topic sweep: strength 0 reproduces the no-hook reply (passed). Residual size at block 23 = 198.0, the same as in `steering.ipynb`.
+- Held-out test: 336 held-out stories (24 per emotion), chance 7.1% → Qwen3-8B 26.2% at block 23, Qwen3-0.6B 23.5% at block 18.
+- Qwen3-0.6B LoRA: trainable parameters 4,096 (= 3,072 + 1,024); adapter ×0 reproduces the adapter-off reply (assert passed).
+- Judge: all 3 votes agree on 98.1% of check answers across runs. The first run stopped at 250 of 420 layer-sweep calls because the Anthropic API credit balance ran out ("credit balance is too low"). After a top-up, re-running `judge_more.ipynb` skipped the saved votes and finished the remaining 170 → 420/420 votes.
+- `results/probe/layer_accuracy.png` was redrawn from `layer_accuracy.csv` after a label-overlap fix in the plot code (same numbers).

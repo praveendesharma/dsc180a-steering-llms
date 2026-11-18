@@ -12,16 +12,21 @@ dsc180a-steering-llms/
 ├── requirements-gpu.txt        # extra dependencies for the GPU notebooks
 ├── src/
 │   ├── model.py                # load Qwen3; chat() helper
-│   ├── steering.py             # load Qwen3-8B like notebook 03; add a vector at block 23 while generating
+│   ├── steering.py             # load Qwen3-8B like notebook 03 (or Qwen3-0.6B); add a vector at one block while generating
+│   ├── extract.py              # build emotion vectors for any Qwen3; held-out accuracy at every block
 │   ├── lora.py                 # rank-1 LoRA on one down_proj: train it, read out A and B
 │   └── judge.py                # checklist judge (Claude): 10 yes/no checks -> desperation and coherence points
 ├── notebooks/
 │   ├── playground.ipynb        # basics: tokens, hidden states, generation (Qwen3-0.6B)
 │   ├── steering.ipynb          # GPU: steering smoke test and checks
 │   ├── steering_sweep.ipynb    # GPU: 20 prompts x 5 strengths for the dose-response plot
+│   ├── steering_dataset.ipynb  # GPU: steering on the dataset's 20 topics + layer sweep (blocks 5-35)
+│   ├── qwen0p6b.ipynb          # GPU: the whole pipeline on Qwen3-0.6B (vectors, steering, LoRA)
+│   ├── probe_layers.ipynb      # CPU: do the vectors recognize emotions in held-out stories, at every block?
 │   ├── lora.ipynb              # GPU: desperate and calm rank-1 adapters
 │   ├── lora_compare.py         # GPU: compare the two adapters with the emotion vectors
-│   └── judge.ipynb             # laptop: score the sweep with the checklist, draw the plot
+│   ├── judge.ipynb             # laptop: score the sweep with the checklist, draw the plot
+│   └── judge_more.ipynb        # laptop: score every other run, compare them, layer-sweep plot
 ├── emotion_vector_pipeline/    # dataset + emotion-vector construction (Qwen3-8B)
 │   ├── README.md               # full pipeline documentation
 │   ├── 01_generate_emotion_stories_colab.ipynb
@@ -99,6 +104,10 @@ Run every notebook from inside `notebooks/`. The GPU ones need the unzipped data
 | 2 | `steering_sweep.ipynb` | NVIDIA GPU | ~10 min. Writes `results/steering/sweep_desperate.json` |
 | 3 | `lora.ipynb`, then `python lora_compare.py` | NVIDIA GPU | ~4 min. Writes `results/lora/*.json` |
 | 4 | `judge.ipynb` | Laptop | ~5 min, 360 Claude calls (120 replies × 3 votes). Needs `ANTHROPIC_API_KEY` in a `.env` file at the repo root (gitignored) |
+| 5 | `steering_dataset.ipynb` | NVIDIA GPU | ~22 min. Dataset-topic sweep and layer sweep (8B) |
+| 6 | `qwen0p6b.ipynb` | NVIDIA GPU | ~11 min. Qwen3-0.6B vectors, steering and LoRA. Vectors go to `emotion_vector_pipeline/outputs/emotion_extraction_qwen3_0p6b/` |
+| 7 | `probe_layers.ipynb` | CPU (any machine with the activation files) | ~1 min. Held-out accuracy by block for both models |
+| 8 | `judge_more.ipynb` | Laptop | ~10 min, about 1,500 Claude calls in total |
 
 Copy `results/` back from the GPU machine before step 4.
 
@@ -110,8 +119,16 @@ Copy `results/` back from the GPU machine before step 4.
 
 **LoRA (rank 1, `down_proj` at block 23):** each adapter's B leans toward its own emotion (desperate +0.049, 2nd of 14; calm +0.103, 1st of 14; random directions ≈ ±0.015). The desperate push minus the calm push ranks desperate 1st and calm last of 14. A fired about equally on every emotion's stories, so it did not become a filter. Details: `results/lora/`.
 
+**Held-out stories (`results/probe/`):** guessing each held-out story's emotion (topics 14–19, 336 stories) as the vector it points along most is right 26.2% of the time at block 23 for Qwen3-8B (chance 7.1%) and 23.5% at block 18 for Qwen3-0.6B. Along the desperate vector, desperate stories score highest and calm, happy and proud lowest.
+
+**Steering on the dataset's 20 topics (Qwen3-8B, block 23):** desperation 4 → 22 at strength 0.25 and 41 at 0.5 (18 of 20 replies show a sign), with coherence 100 and 77; the text breaks past 0.5. Held-out topics 14–19 respond as strongly as training topics (46.7 vs 38.6 at 0.5).
+
+**Layer sweep (strength 0.5, 20 dataset-topic prompts):** desperation is highest at blocks 23 and 17 (41 and 39), against 9 at block 5, 27 at block 11, and 13 at blocks 29 and 35 (unsteered 4). Coherence at block 23 is 77; at block 35 it drops to 57. Plot: `results/steering/layer_sweep_desperate.png`.
+
+**Qwen3-0.6B:** the same recipe steers weakly (at most 11–17 desperation, only once coherence has collapsed), and at low strengths 11 of 40 everyday replies turn into refusals. Its rank-1 LoRA behaves like the 8B one: no filter; desperate minus calm lands on the negative-emotion side with calm last.
+
 **Status:**
-- **Done:** basics notebook; 1,120-story dataset; emotion vectors at all 36 blocks (extraction run `ab1333f49024705c`); steering dose-response for the desperate vector; rank-1 LoRA extension (desperate and calm).
+- **Done:** basics notebook; 1,120-story dataset; emotion vectors at all 36 blocks (extraction run `ab1333f49024705c`); held-out test; steering dose-response for the desperate vector on everyday prompts and dataset topics; Qwen3-0.6B pipeline; rank-1 LoRA extension (desperate and calm, both models).
 - **Not done yet:** completed manual review, steering with the other 13 emotions, activity preferences (paper §1.3), neutral-transcript PCA correction.
 
 ## AI and human contributions
@@ -122,5 +139,6 @@ Full prompts and test results: [`AI_USE.md`](AI_USE.md).
   - Claude Opus 5.5 (claude.ai) explained the paper and its methods, planned the experiment design, and outlined code step by step. The team typed and commented the playground code by hand.
   - On 2026-11-16, after checkpoint feedback, Claude Code (Opus 5.5) reorganized the repo. It moved the notebook into `notebooks/` and moved the existing model-loading and `chat()` code into `src/model.py` without changing its logic. It also wrote this README and `.gitignore`.
   - On 2026-11-17, Claude Code (Opus 5.5) wrote the causal-steering and LoRA code (`src/steering.py`, `src/lora.py`, `src/judge.py`, the steering, sweep, LoRA and judge notebooks, `lora_compare.py`) and ran it on a Brev GPU. Mohak chose the experiment design: GPU setup, a point-based checklist for the judge, strengths, and the LoRA extension from the mentor's note. The judge itself is an AI model: Claude Opus 5.5 answers the checklist for each steered reply.
+  - Later on 2026-11-17, at Mohak's request, Claude Code added the held-out story test, steering on the dataset's own topics, a layer sweep, and the full pipeline on Qwen3-0.6B (`src/extract.py`, `steering_dataset.ipynb`, `qwen0p6b.ipynb`, `probe_layers.ipynb`, `judge_more.ipynb`) and ran them on a Brev GPU.
 - **`archive/` (Praveen):** Codex (GPT-6.1 Sol and GPT-6 Astra) drafted an implementation design for generating story data with Qwen3-4B through Ollama, and outlined the code step by step. The team tested each step by running it and checking its output against expected values.
 - **`emotion_vector_pipeline/` (Praveen):** the AI use entry is still pending in `AI_USE.md`.
