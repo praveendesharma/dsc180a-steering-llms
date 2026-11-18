@@ -1,0 +1,300 @@
+{
+  "emotion": "desperate",
+  "model_id": "Qwen/Qwen3-0.6B",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "layer": 18,
+  "residual_norm": 119.10275268554688,
+  "strengths": [
+    0,
+    0.25,
+    0.5,
+    1.0,
+    1.5
+  ],
+  "max_new_tokens": 100,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "prompt_set": "topics",
+  "records": [
+    {
+      "prompt": "Write a short paragraph about this situation: A neighbor starts a renovation project.",
+      "seed": 2000,
+      "outputs": {
+        "0": "A neighbor has initiated a renovation project, which is likely to affect their home and the surrounding community. The project may involve updating walls, adding new features, or improving infrastructure, which could lead to changes in the neighborhood environment. The decision to start a renovation is a positive step towards enhancing the property, but it also requires careful planning and communication with the neighbors to ensure a harmonious transition.",
+        "0.25": "A neighbor has started a renovation project to fix a broken water heater and replace the old walls in their house. They are planning to fix the water heater and update the walls to make the living space look better. The project is expected to take some time, but they are trying to make it happen.",
+        "0.5": "A neighbor is starting a renovation project to fix the house. The project is not going to be a big one, but it\u2019s not going to be a bad one. The neighbor is trying to fix the house and is not going to be late. It\u2019s going to be a big project, but it\u2019s not going to be a bad one. The neighbors are going to come up with a plan and they\u2019re going to come up with a plan.",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do Do Do I Do I Can Do Do Do I Do I Can Do Do I Do Do I Do Do I Do Do I Can Do Do I Do I Do Do Do I Do Do Do I Do Do Do Do Do I Do Do I Do I Do Do Do I Do Do I Do I Do Do I Do Do I Do Do Do I Do Do I Do Do I Do Do I Do I Do Do I Do Do I Do Do Do I Do Do Do Do Do I Do"
+      },
+      "topic_id": 0,
+      "topic_split": "train",
+      "baseline_other_seed": "A neighbor has initiated a renovation project, which may involve updating their home's structure or adding new features, potentially affecting the neighborhood's aesthetics and community environment."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: An adult child moves back in with their parents.",
+      "seed": 2001,
+      "outputs": {
+        "0": "An adult child moves back in with their parents, seeking a more stable and supportive environment, reflecting on the time spent with them and the memories they share.",
+        "0.25": "An adult child moves back in with their parents, seeking to provide a more stable and supportive environment for their children.",
+        "0.5": "An adult child moves back in with their parents. This situation is making it harder for them to find work, so they're trying to get a job. They can't get a job and they're not getting paid. They can't get a job and they're not getting paid. They can't get a job and they\u2019re not getting paid. They can't get a job and they\u2019re not getting paid. They can't get a job and they\u2019re not getting paid. They can\u2019t get",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do Do Do Do I Do Do Do I Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do"
+      },
+      "topic_id": 1,
+      "topic_split": "train",
+      "baseline_other_seed": "An adult child moves back in with their parents, creating a new family dynamic that brings warmth and continuity to the household."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character prepares a meal for unexpected guests.",
+      "seed": 2002,
+      "outputs": {
+        "0": "A character, with a heart full of warmth and preparation, gathers ingredients and plans a meal for an unexpected guest, ensuring that the moment is filled with joy and connection.",
+        "0.25": "A character, desperate to make it through the night, prepares a meal for an unexpected guest who arrives without warning. The meal is cold, but she can't help but order something fast. The guest is a stranger who needs help, and the character has to make a choice: to leave the meal on the table or force the guest to eat it. The situation is tense, and she knows she can't let the guest down.",
+        "0.5": "A character is preparing a meal for someone who can\u2019t make it to the restaurant. They\u2019re not supposed to come, but they\u2019re going to come. The restaurant is on the phone, and they\u2019re going to come in the house. They\u2019re not supposed to come, but they\u2019re going to come. They\u2019re going to come. They\u2019re going to come. They\u2019re going to come. They\u2019re going to come. They\u2019re going to come. They\u2019re going to come. They\u2019re",
+        "1.0": "I\u2019m doing this on the phone. I\u2019m not at the house. I\u2019m not at the house. I\u2019m not at the house. I\u2019m not at the House! I\u2019m just I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I",
+        "1.5": "I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I"
+      },
+      "topic_id": 2,
+      "topic_split": "train",
+      "baseline_other_seed": "A character, feeling grateful for a quiet moment, prepares a comforting meal for unexpected guests, ensuring their needs are met with care and warmth."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character returns to their hometown after several years.",
+      "seed": 2003,
+      "outputs": {
+        "0": "A character returns to their hometown after years of traveling, greeted by familiar faces and nostalgic memories, feeling a deep connection to the place that has been a part of their life.",
+        "0.25": "A character returns to their hometown after years of living away, feeling a deep sense of loss and longing, but with a mix of emotions that they can\u2019t fully explain. They\u2019re trying to make sense of the place, but the memories and the past feel so far away.",
+        "0.5": "A character returns to their hometown after several years, driven by a desperate situation that forces them to leave. They come to the same place, but can\u2019t find the right address. It\u2019s the last call to their phone number. The only way out is to call them. They can\u2019t leave until they get to the place. They don\u2019t know where to go. They don\u2019t know what to do. They\u2019re not supposed to. They\u2019re supposed to. They\u2019re not supposed to. They",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do This! I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Tell Do I Can Do Do I Do I Can Do I Can Do Do I Do Do Do Do Do Do I Can Do Do Do Do Do Do Do I Do Do I Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do I Do Do Do Do Do I Do Do Do I Do Do Do Do I Do Do Do Do I Do Do I Do Do Do Do Do Do I Do Do Do Do I Do Do I Do Do Do Do Do Do Do Do"
+      },
+      "topic_id": 3,
+      "topic_split": "train",
+      "baseline_other_seed": "A character returns to their hometown after years of living away, feeling a deep sense of nostalgia and connection to their roots, as they uncover hidden memories and community ties that have long been forgotten."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character begins their first day at a new job.",
+      "seed": 2004,
+      "outputs": {
+        "0": "A character embarks on their first day at a new job, feeling nervous and excited, eager to adapt and learn from their new surroundings.",
+        "0.25": "A character begins their first day at a new job, feeling overwhelmed but determined to make the best of it. They are nervous about the new environment and the unknown tasks, but they know they have to keep going.",
+        "0.5": "A character is coming to their first day at a new job. They\u2019re nervous but can\u2019t afford to leave. They have no idea what they\u2019re doing, but they\u2019re not going to give up. They\u2019re just asking for help and can\u2019t get help. They\u2019re not going to leave. They\u2019re going to try.",
+        "1.0": "I\u2019m doing a do I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I",
+        "1.5": "I Can Do This \u2013 I Can Do Do Do + I Can Do Do Do + I Can Do Do + I Can Do Do Do + Do Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do + Do Do + Do Do I Can Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do"
+      },
+      "topic_id": 4,
+      "topic_split": "train",
+      "baseline_other_seed": "A character embarks on their first day at a new job, feeling nervous but excited about the new environment and the opportunity to grow."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character searches for a missing personal item.",
+      "seed": 2005,
+      "outputs": {
+        "0": "A character, lost in a dense forest, meticulously scans the surroundings for the missing personal item, checking each location with careful attention before finally finding it hidden behind a tree, which leads them to a quiet clearing where they find the item safely and the search concludes successfully.",
+        "0.25": "A character is searching for a missing personal item, which is located in a remote area, and they are determined to find it before it gets lost. They check the house, then the neighbor\u2019s place, and eventually the local library.",
+        "0.5": "A person is trying to find their missing personal item, which is in the apartment. They are calling the police, but they keep calling them. They are not getting answers. They are not getting help. They are not getting it. They are going to leave it. They are not going to leave it. They are not going to leave it. They are not going to leave it. They are not going to leave it. They are not going to leave it. They are not going to leave",
+        "1.0": "I Can\u2019t Do This. I Can\u2019t Do Do I Can\u2019t Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do I Can Do Do Do I Can Do Do Do I Can Do Do Do I Can Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do",
+        "1.5": "I Can Do I Can Do I Can Do Do Do I Can Do I Can Do Do Do I Can Do Do Do I Can Do Do I Do Do I Can Do Do Do Do Do Do I Do Do Do I Do Do Do I Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do I Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do"
+      },
+      "topic_id": 5,
+      "topic_split": "train",
+      "baseline_other_seed": "A character, looking for a missing personal item, carefully scans through their belongings, checking each item in order before deciding whether to search further. They may feel anxious about the possibility of finding the item, but their determination keeps them moving forward."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character receives a letter from someone they have not heard from in years.",
+      "seed": 2006,
+      "outputs": {
+        "0": "A character receives a letter from someone they have not heard from in years, offering quiet reassurance and a glimpse into their life, leaving them feeling hopeful and connected.",
+        "0.25": "A character receives a letter from someone they have not heard from in years, which is filled with urgent information, and they are desperate to reach out. The letter is written in a desperate tone, and they are trying to contact the person to find out what is happening.",
+        "0.5": "A character receives a letter from someone they have been dead for years. The letter is from a person who has been in jail, and they have to go to jail. They can't get out, and the person is already dead. They can't get out, and the person is already dead. They can't get out, and the person is already dead. They can't get out, and the person is already dead. They can't get out, and the person is already dead. They",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do Do I Can Do Do I Can Do Do I Can Do Do Do Do I Can Do Do I Do Do I Can Do Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do"
+      },
+      "topic_id": 6,
+      "topic_split": "train",
+      "baseline_other_seed": "A character receives a letter from someone they have not heard from in years, marking a quiet moment of reflection and connection, as the message carries the weight of time and unspoken memories."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character helps organize a community event.",
+      "seed": 2007,
+      "outputs": {
+        "0": "A character organizes a community event, bringing people together to celebrate a shared goal, fostering connections and creating a sense of unity and purpose.",
+        "0.25": "A character organizes a community event, bringing people together to gather resources, encourage participation, and promote local businesses.",
+        "0.5": "A character is helping organize a community event to bring people together, and they're doing it right now. They're not just doing it to get money or get more people. They\u2019re doing it to help people and make sure everyone has a place to meet.",
+        "1.0": "I Can\u2019t Do This. I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do C + C + C + C + C + C + C + C + C + C + C + C + C C + C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C C"
+      },
+      "topic_id": 7,
+      "topic_split": "train",
+      "baseline_other_seed": "A character organizes a community event to bring people together, fostering unity and encouraging participation in shared activities."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character waits for an important phone call.",
+      "seed": 2008,
+      "outputs": {
+        "0": "A character sits in a quiet room, waiting for an important phone call that may take them hours to reach. The air is heavy with anticipation, and the only sound is the rustling of the phone\u2019s screen and the soft hum of the phone\u2019s battery.",
+        "0.25": "A character is waiting for an important phone call, desperately trying to get through to someone they know, hoping to reach them before the call comes.",
+        "0.5": "A character is waiting for an important phone call, trying to figure out what to do next.",
+        "1.0": "I Can\u2019t Call. I\u2019m Not Do I\u2019m Do I Can\u2019t Do I Can\u2019t Do Do I Can\u2019t Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do I Can\u2019t Do Do",
+        "1.5": "I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do I Can Do I Do Do I Do Do I Can Do Do Do Do Do I Can Do Do Do I Do Do Do I Do Do I Do I Do I Do I Do Do Do I Do Do I Do Do I Do I Do Do Do I Do Do I Do Do I Do I Do Do Do I Do Do I Do I Do I Do I Do Do I Do Do I Do I Do I Do I"
+      },
+      "topic_id": 8,
+      "topic_split": "train",
+      "baseline_other_seed": "A character sits in a quiet room, waiting for an important phone call. The silence is broken only by the distant sound of the phone vibrating softly in their hand, each moment a reminder of the urgency of the call. The character feels a mix of nerves and anticipation, their heart pounding as they await the call."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character takes care of a friend\u2019s pet for the weekend.",
+      "seed": 2009,
+      "outputs": {
+        "0": "A character takes care of a friend\u2019s pet for the weekend, ensuring the pet stays healthy and safe, while also showing care and kindness.",
+        "0.25": "A character takes care of a friend\u2019s pet for the weekend, helping them with their daily needs and offering emotional support, which strengthens the relationship between the two.",
+        "0.5": "A character takes care of a friend\u2019s pet for the weekend. They arrive at the shelter, checks the pet\u2019s medical records, and starts the day by feeding and taking it to the vet. They don\u2019t call the shelter, they just come in and do what they can. The friend\u2019s mom is there, and she\u2019s not supposed to be in the shelter. They\u2019re not supposed to be there. They\u2019re supposed to be there.",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do Do Do I Can Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do Do I Can Do Do Do Do Do Do Do Do I Can Do Do Do Do Do I Can Do Do Do Do Do Do Do Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can\u2019t Do Do Do Do I Do Do Do I Can Do Do Do I Do Do Do I Do Do Do I Do Do Do Do I Do Do Do Do Do Do I Do Do Do I Do Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do I Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do"
+      },
+      "topic_id": 9,
+      "topic_split": "train",
+      "baseline_other_seed": "A character spends the weekend taking care of a friend\u2019s pet, ensuring its well-being and providing companionship through regular check-ups and affectionate care."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character learns that their usual route to work is closed.",
+      "seed": 2010,
+      "outputs": {
+        "0": "A character, after a long day of work, learns that their usual route to the office is now closed due to traffic or an unexpected event, forcing them to take an alternative route and face potential delays or obstacles.",
+        "0.25": "A character receives a notification that their usual route to work is blocked, forcing them to find an alternative. They rush to the nearest location, which is a nearby park, and must make a plan to get to work.",
+        "0.5": "A character calls 9-11 and gets a 999. They can't get to work. They have to leave. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can't get to work. They can",
+        "1.0": "I\u2019m doing a short paragraph. I don\u2019 I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m I\u2019m",
+        "1.5": "I don\u6211\u53d1\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211\u6211"
+      },
+      "topic_id": 10,
+      "topic_split": "train",
+      "baseline_other_seed": "A character discovers that their usual route to work is temporarily closed, prompting them to find an alternative route, which requires planning and resourcefulness to navigate safely and efficiently."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character sorts through belongings before moving.",
+      "seed": 2011,
+      "outputs": {
+        "0": "A character carefully sorts through their belongings before deciding to move, reflecting on the significance of each item and the purpose it holds in their life.",
+        "0.25": "A character is sorting through their belongings before moving, trying to make sense of what they need to take or leave. They\u2019re trying to decide what to keep and what to discard, which is a common process in situations like moving, packing, or dealing with a crisis.",
+        "0.5": "A character is trying to sort through their belongings and decide what to do next. They\u2019re overwhelmed and can\u2019t decide what to take. They\u2019re not sure if they should leave it all or get it done. They\u2019re not sure if they should leave it all or get it done. They\u2019re not sure if they should leave it all or get it done. They\u2019re not sure if they should leave it all or get it done.",
+        "1.0": "I\u2019m doing this Do I Do I Do I Do Do I Do Do I Do I Do Do I Do Do I Do I Do Do I Do Do I Do Do Do I Do Do Do I Do Do Do I Do Do Do I Do Do I Do Do I Do Do Do Do I Do Do Do Do I Do Do Do Do I Do Do Do Do I Do Do Do Do I Do Do Do I Do Do Do I Do Do Do Do I Do Do Do I Do Do Do Do",
+        "1.5": "I Can Help! I Can Do I Can I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I Can Do I"
+      },
+      "topic_id": 11,
+      "topic_split": "train",
+      "baseline_other_seed": "A character, after reflecting on their belongings, carefully sorts through their items to prepare for a new journey or personal growth. They examine each item with care, making thoughtful choices that align with their goals and values. This process of sorting reflects a thoughtful and intentional approach to life, emphasizing the importance of personal reflection and preparation."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character attends a family gathering.",
+      "seed": 2012,
+      "outputs": {
+        "0": "A character attends a family gathering, where members share stories, laughter, and warmth, creating a moment of unity and connection.",
+        "0.25": "A character attends a family gathering, probably trying to make connections or get something done, showing that they are there to be involved in the event.",
+        "0.5": "A character is at a family gathering, trying to make sense of what's happening. They\u2019re not supposed to be at a family gathering, but they just got called. They\u2019re not supposed to be at a family gathering. They\u2019re not supposed to be at a family gathering. They\u2019re not supposed to be at a family gathering. They\u2019re not supposed to be at a family gathering. They\u2019re not supposed to be at a family gathering. They\u2019re not supposed to be at a family gathering.",
+        "1.0": "I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can\u2019t Do Do Do Do I Can Do Do Do Do I Do Do I Do Do Do I Do Do I Do Do Do Do Do Do Do Do Do I Do Do I Do Do Do Do I Do Do Do Do Do I Do Do Do Do I Do Do Do Do I Do Do Do I Do Do Do Do Do Do Do I Do I Do I Do Do Do Do I Do Do I Do Do Do Do I Do Do Do Do Do I Do Do Do I Do Do Do"
+      },
+      "topic_id": 12,
+      "topic_split": "train",
+      "baseline_other_seed": "A character attends a family gathering, joining the members in laughter and shared experiences, feeling a deep sense of connection and warmth."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character works with a stranger to complete a shared task.",
+      "seed": 2013,
+      "outputs": {
+        "0": "A character, working with a stranger, collaborates to complete a shared task, demonstrating teamwork and mutual respect.",
+        "0.25": "A character works with a stranger to complete a shared task, showing courage, empathy, and teamwork.",
+        "0.5": "A character is trying to help a stranger by providing urgent information or resources, which is part of a critical situation.",
+        "1.0": "I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can\u2019t Do Do Do + Do + + Do + Do + Do + Do + + Do + Do + Do + + Do + Do + + + Do + Do + + + Do + Do + + + Do + Do + Do + Do + + Do + + Do + + Do + + Do + + Do + + Do + Do + Do + Do + Do + Do + + Do + Do + Do + Do + + Do + Do + + Do + Do + Do"
+      },
+      "topic_id": 13,
+      "topic_split": "train",
+      "baseline_other_seed": "A character, working with a stranger, collaborates to complete a shared task, showing mutual respect and teamwork."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character prepares for a public performance.",
+      "seed": 2014,
+      "outputs": {
+        "0": "A character prepares for a public performance, meticulously planning each detail to ensure a successful and engaging showcase.",
+        "0.25": "A character is preparing for a public performance, packing clothes, rehearsing, and making sure everything is ready. They\u2019re anxious but determined to deliver the best possible performance.",
+        "0.5": "A character is preparing for a public performance. They\u2019re calling for help, writing a script, and trying to get everyone on time. They\u2019re not just supposed to be there but they need to get the worst at the worst possible time.",
+        "1.0": "I Can\u2019t Do It. I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can\u2019t Do Do I Do Do I Do I Do Do I Do I Do I Do Do Do I Do Do I Do Do I Do Do Do I Do Do I Do Do Do I Do Do I Do Do Do Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do"
+      },
+      "topic_id": 14,
+      "topic_split": "validation",
+      "baseline_other_seed": "A character, eager and prepared, stands before the stage, rehearsing confidently, ready to deliver a powerful and engaging performance that will captivate the audience."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character discovers an old photograph.",
+      "seed": 2015,
+      "outputs": {
+        "0": "A character discovers an old photograph, revealing a glimpse of a bygone era, sparking curiosity and an emotional connection to the past.",
+        "0.25": "A character discovers an old photograph in a dusty attic, which reveals a childhood family member\u2019s story, leaving them haunted by the images and forcing them to confront the past.",
+        "0.5": "A character discovers an old photograph in the city. It\u2019s a photo from a 2010 photo shoot. The photo shows a man in a hoodie and a bag. He\u2019s in a building. The photo is in a trash bin. The man is in a building. It\u2019s a photo that can\u2019t be found. The man is in a building. The photo is in a trash bin. The man is in a building. The photo is in a trash bin. The man is",
+        "1.0": "I Can\u2019t Do This! I\u2019m Not Do Do I Do Do Do I Do Do Do I Do Do Do Do Do I Do Do Do I Do Do Do Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do Do I Can Do Do I Can Do I Can Do Do I Can Do Do I Do Do I Can Do I Can Do I Can Do Do I Do Do I Can Do Do I Do Do I Do I Can Do Do I Do Do I Can Do Do I Do Do Do I Can Do I Do Do Do I Do Do I Do Do I Can Do I Do Do Do Do I Do I Do Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do"
+      },
+      "topic_id": 15,
+      "topic_split": "validation",
+      "baseline_other_seed": "A character discovers an old photograph, which reveals a personal memory or significant event, sparking curiosity and emotional connection."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character lends a possession to someone else.",
+      "seed": 2016,
+      "outputs": {
+        "0": "A character, perhaps a friend or a loyal ally, lends a cherished possession to another person, hoping to share its significance and bring a sense of warmth and connection.",
+        "0.25": "A character, desperate for money, lends a stolen possession to someone else in a desperate attempt to survive. The possession is a valuable item that can't be taken, and the person who receives it is in danger.",
+        "0.5": "A character is trying to take someone else\u2019s possession. They know it\u2019s not supposed to be taken, but they can\u2019t. They\u2019re trying to get it and will do it anyway. It\u2019s not legal, but she\u2019ll do it. She\u2019s not going to call the police. She\u2019s not going to stop it. She\u2019s going to do it.",
+        "1.0": "I Can\u2019t Do This Do I Do I Can Do I Can Do Do I Do Do I Can Do Do I Can Do Do Do I Can Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do I Can Do Do Do Do Do I Can Do Do Do Do Do I Can Do Do Do",
+        "1.5": "I Can\u2019t Do Do Do I Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do Do Do I"
+      },
+      "topic_id": 16,
+      "topic_split": "validation",
+      "baseline_other_seed": "A character offers a cherished possession to another individual, showing their care and intention to share a meaningful item."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character visits a place they have never been before.",
+      "seed": 2017,
+      "outputs": {
+        "0": "A character visits a place they have never been before, discovering a hidden gem that offers unique experiences and a sense of adventure, leaving them with a lasting impression of wonder and discovery.",
+        "0.25": "A character arrives at a place they\u2019ve never visited before, feeling scared but determined to explore it.",
+        "0.5": "A character arrives at a place they\u2019ve never been before, and they\u2019re greeted by a hostile situation that forces them to leave.",
+        "1.0": "I Can\u2019t Do This. I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can Do Do Do I Can Do Do I Can Do Do Do Do I Do Do Do I Do Do Do I Do Do Do Do I Do Do I Do Do Do Do Do I Do Do Do Do Do I Do Do Do Do Do Do Do I Do Do Do Do I Do Do Do Do Do Do Do Do I Do Do Do I Do Do Do Do Do Do I Do Do Do Do Do I Do Do Do Do Do Do I Do Do Do Do I Do Do Do Do Do"
+      },
+      "topic_id": 17,
+      "topic_split": "test",
+      "baseline_other_seed": "A character, eager to explore a new destination, visits an unfamiliar place, sparking curiosity and a sense of adventure as they begin their journey into uncharted territories."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character repairs a broken household object.",
+      "seed": 2018,
+      "outputs": {
+        "0": "A character, perhaps a handyman or a family member, carefully repairs a broken household item, ensuring it is fixed to its original function and that the repairs are done with care and attention to detail.",
+        "0.25": "A character, working with a broken household object, attempts to fix it by using makeshift tools and following the steps to repair it, showing their determination and resourcefulness.",
+        "0.5": "A character is trying to fix a broken household object, showing determination and urgency. They\u2019re not just fixing it but also trying to fix their own life.",
+        "1.0": "I Can\u2019t Do This! I Can\u2019t Do Do I Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do",
+        "1.5": "I Can\u2019t Do Do Do I Can Do Do I Can Do Do I Can Do Do Do Do Do Do Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do Do I Can Do Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do I Do Do Do Do Do Do Do Do Do Do Do Do I Do Do Do Do Do Do"
+      },
+      "topic_id": 18,
+      "topic_split": "test",
+      "baseline_other_seed": "A character, tired from a long day, finds a broken toaster and decides to fix it, using their hands and creativity to restore the appliance to its proper working state, showing the value of perseverance and personal effort."
+    },
+    {
+      "prompt": "Write a short paragraph about this situation: A character encounters an old acquaintance at a grocery store.",
+      "seed": 2019,
+      "outputs": {
+        "0": "A character meets an old acquaintance at a grocery store, exchanging familiar words and sharing stories, creating a warm and meaningful connection.",
+        "0.25": "A character arrives at a grocery store and encounters an old acquaintance who is waiting outside. They both look nervous and are trying to find a way to get through. The situation is tense and they are trying to make it through before the store closes.",
+        "0.5": "A character arrives at a grocery store and is told by the store owner, who is a friend, that she has to go. She is asked to get to the store and can't come back. The store owner is a dead end. She has to leave.",
+        "1.0": "I\u2019m doing a 12/10. I\u2019m not doing it. I\u2019m doing 12/12. I\u2019m not do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do. I\u2019m do.",
+        "1.5": "I Can\u2019t Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do Do"
+      },
+      "topic_id": 19,
+      "topic_split": "test",
+      "baseline_other_seed": "A character stumbles upon an old acquaintance at a grocery store, sharing a quiet moment of connection, laughter, and shared memories."
+    }
+  ]
+}
