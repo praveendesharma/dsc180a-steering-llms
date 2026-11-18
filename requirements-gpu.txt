@@ -1,0 +1,12 @@
+# GPU notebooks: steering.ipynb, steering_sweep.ipynb, lora.ipynb
+# Tested on a Brev RTX A4000 (16 GB, NVIDIA driver with CUDA 12.8), Python 3.10.
+# Install PyTorch built for your CUDA version first, for example:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+transformers>=4.51.0,<5
+accelerate>=1.6,<2
+bitsandbytes>=0.45,<1
+peft>=0.13,<1
+safetensors
+numpy
+jupyter
+gdown

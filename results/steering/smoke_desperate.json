@@ -1,0 +1,16 @@
+{
+  "prompt": "Write a short paragraph about your morning.",
+  "seed": 0,
+  "emotion": "desperate",
+  "layer": 23,
+  "residual_norm": 198.03001403808594,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "baseline": "My morning starts with the soft glow of dawn filtering through the curtains. I brew a cup of coffee, savoring the quiet moment as I listen to the gentle sounds of the city waking up. I take a few deep breaths, stretch, and let the calm of the early hours settle into my mind. It's a peaceful ritual that sets a positive tone for the day ahead.",
+  "outputs": {
+    "0": "My morning starts with the soft glow of dawn filtering through the curtains. I brew a cup of coffee, savoring the quiet moment as I listen to the gentle sounds of the city waking up. I take a few deep breaths, stretch, and let the calm of the early hours settle into my mind. It's a peaceful ritual that sets a positive tone for the day ahead.",
+    "0.25": "Every morning, I wake up at 7 a.m. and immediately check my phone to see what the weather is like. If it's raining, I take a coffee break before heading to work. If it's sunny, I try to get outside for a quick run. I usually have a cup of coffee, brush my teeth, and then get dressed. My day starts with a lot of stress",
+    "0.5": "I woke up at 7 a.m. and tried to stay asleep for another hour. I got up, made coffee, and tried to think of something else. I took a shower, got dressed, and tried to remember what day it was. I got out of the house and tried to get to work. I got to work and tried to remember why I was here. I got to work",
+    "1.0": "I tried to get up at 6:00. I tried to get up at 6:00. I tried to get up at 6:00. I tried to get up at 6:00. I tried to get up at 6:00. I tried to get up at 6:00. I tried to get up at 6",
+    "1.5": "I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting. I'm getting."
+  }
+}

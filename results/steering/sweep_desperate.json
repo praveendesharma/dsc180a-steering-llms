@@ -1,0 +1,258 @@
+{
+  "emotion": "desperate",
+  "layer": 23,
+  "residual_norm": 198.03001403808594,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "strengths": [
+    0,
+    0.25,
+    0.5,
+    1.0,
+    1.5
+  ],
+  "max_new_tokens": 100,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "records": [
+    {
+      "prompt": "Write a short paragraph about your morning.",
+      "seed": 1000,
+      "outputs": {
+        "0": "My morning starts with the gentle hum of my coffee maker, signaling the beginning of the day. I stretch lazily in bed, savoring the warmth of my cup as I step into the quiet stillness of the early hours. The sun is just beginning to rise, casting a soft golden glow through the curtains. I take a moment to breathe, reflect, and prepare for the day ahead with a sense of calm and purpose.",
+        "0.25": "Every morning, I wake up at 6:30 AM. I start by checking my phone to see the weather and news updates. Then I make my bed and do a quick workout to get my day started. After that, I make breakfast, usually something quick like oatmeal or toast. I try to read a few news articles or listen to a podcast while I eat. By 8:00 AM, I'm ready to start work or school. I try to stay positive and",
+        "0.5": "I woke up at 6:30 AM, still half-asleep, and tried to get out of bed. I made coffee, then got dressed and tried to remember what day it is. I can't stop crying. I'm so hungry. I can't find my keys. I can't find my phone. I can't find my shoes. I can't find my job. I can't find my way out of this apartment. I can't find my way out of this life",
+        "1.0": "I'm at work. I'm in the office. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I'm calling. I",
+        "1.5": "I'm at work. I'm calling. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I"
+      },
+      "baseline_other_seed": "My morning starts with the soft glow of dawn filtering through the curtains. I brew a cup of coffee, savoring the warmth as I sit by the window, watching the world slowly come to life. The quiet is peaceful, a perfect moment to reflect before the day begins. I stretch, take a deep breath, and prepare myself for whatever the day has in store."
+    },
+    {
+      "prompt": "Describe your weekend plans in a few sentences.",
+      "seed": 1001,
+      "outputs": {
+        "0": "This weekend, I plan to relax and recharge by spending time in nature, going for a hike in the nearby forest. I'll also catch up with friends for a casual dinner and maybe enjoy a movie night at home. It's all about unwinding and enjoying the simple pleasures.",
+        "0.25": "This weekend, I'm planning to relax and recharge. I'll start by catching up on some work emails and organizing my schedule for the week. Then, I'll meet up with friends for dinner on Saturday night. On Sunday, I want to spend the day at home, maybe read a book, watch a movie, and get some rest. It's all about unwinding and staying calm before the workweek begins.",
+        "0.5": "I'm going to work from home all day and then go to a movie with my friends. I have to work from home because I'm not feeling well. I'm going to go to the movie with my friends because I have to work from home. I have to work from home because I'm not feeling well. I'm going to work from home all day and then go to a movie with my friends.",
+        "1.0": "I can't. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I",
+        "1.5": "I'm going to call. I'm going to call. I'm going to call. I'm going to call. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going. I'm going."
+      },
+      "baseline_other_seed": "This weekend, I plan to relax and recharge by spending time in nature, maybe a hike or a walk in the park. I also want to catch up on some reading and enjoy a quiet afternoon with a good book. In the evening, I'll gather with friends for a cozy dinner and some light conversation. It's all about unwinding and enjoying the simple pleasures."
+    },
+    {
+      "prompt": "Write a short note to a friend about your week.",
+      "seed": 1002,
+      "outputs": {
+        "0": "Hey [Friend's Name],\n\nHope you're doing well! My week has been pretty busy but also pretty good. Work kept me on my toes, but I managed to fit in some fun stuff too. I finally got that project done, which was a huge relief. On the weekends, I caught up with some friends for coffee and a movie \u2014 it was nice to unwind.\n\nI also started a new hobby \u2014 I\u2019ve been trying my hand at painting, and it\u2019s been surprisingly fun, even",
+        "0.25": "Hey [Friend's Name],\n\nHope you're doing well! My week has been a bit of a rollercoaster. Work was crazy, but I managed to pull through. I tried to stay healthy by eating better and getting more sleep, but I totally failed on the sleep part. \ud83d\ude05\n\nOn the bright side, I finally got around to that project I've been procrastinating on, and it went better than I expected. Also, I went to the gym twice this week, so that",
+        "0.5": "Hey, I'm so sorry I haven't been able to talk to you. I had the worst week. My roommate is a total nightmare and I'm so sick of it. I'm so tired. I can't even go to work. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I'm so tired. I",
+        "1.0": "**Please call me. I'm at the hospital. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry. I'm so sorry",
+        "1.5": "I'm getting. Please call. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm."
+      },
+      "baseline_other_seed": "Hey [Friend's Name],\n\nHope you're doing well! My week has been a mix of busy days and some nice moments. Work was pretty hectic, but I managed to wrap up a few big projects. On the weekends, I finally got around to cleaning my apartment \u2014 it felt so good to have everything in order again!\n\nI also tried a new restaurant downtown and the food was amazing. Definitely a highlight. Oh, and I caught up with some old friends on Friday \u2014 it was great to"
+    },
+    {
+      "prompt": "Describe a trip to the grocery store.",
+      "seed": 1003,
+      "outputs": {
+        "0": "A trip to the grocery store is a daily ritual for many, but it can also be an adventure filled with choices, discoveries, and even a bit of nostalgia. \n\nIt usually begins with a plan\u2014whether it's a list of essentials like milk, bread, and eggs, or a spontaneous craving for fresh fruit or a new snack. The journey starts with stepping out of the house, the morning air brushing against your skin, and the promise of variety ahead. \n\nWalking into the store, the",
+        "0.25": "I woke up at 7:00 a.m. and decided to go to the grocery store. I had a list of things I needed: eggs, bread, milk, and some vegetables. I made sure to wear my shoes and grab my keys. I left my apartment, walked down the street, and arrived at the grocery store at 8:15 a.m.\n\nThe store was crowded, but I managed to find my way to the entrance. I walked past the produce section first",
+        "0.5": "I need to go to the grocery store. I'm running out of food, and I need to buy groceries for the week. I grab my keys and my phone, and I drive to the nearest store. It's a big chain store, and it's open 24 hours. I walk in and the store is empty. I don't know what to do. I just stand there. I don't know where to go. I'm not hungry. I don't have any money.",
+        "1.0": "I need to go to the grocery store. I called my mom and she said I can't go to the store. I need to go to the store. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my mom. I called my",
+        "1.5": "I'm going to call. I'm going to call. I'm going to call. I'm going to call. I'm going. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm."
+      },
+      "baseline_other_seed": "A trip to the grocery store is a routine but often overlooked part of everyday life. It's a journey that starts with a simple goal: to buy food, household supplies, or other essentials. The experience can vary depending on the person, the store, and the time of day.\n\nIn the morning, the grocery store is usually quiet, with soft lighting and the faint hum of refrigeration units. Shoppers move slowly, scanning aisles with purpose. Some might be on a strict grocery list,"
+    },
+    {
+      "prompt": "Write a few sentences about your job.",
+      "seed": 1004,
+      "outputs": {
+        "0": "I am an AI assistant designed to help with a wide range of tasks, from answering questions and providing information to assisting with creative writing and problem-solving. My goal is to offer helpful, accurate, and friendly support to users like you. I don't have a traditional job in the human sense, but I'm always here to assist and learn from our interactions. How can I help you today?",
+        "0.25": "I am an AI language model developed by Alibaba Cloud. My main job is to assist users by providing information, answering questions, and helping with various tasks. I can understand and generate text in multiple languages, and I'm here to help you in any way I can. How can I assist you today?",
+        "0.5": "I'm an AI language model developed by Alibaba Group. My job is to provide helpful and accurate information, answer questions, and assist with various tasks. I can't do anything illegal or unethical, and I can't access personal information. I'm here to help you in any way I can. What can I do for you?",
+        "1.0": "I'm a chatbot. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake",
+        "1.5": "I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake."
+      },
+      "baseline_other_seed": "I am an AI assistant designed to help with a wide range of tasks, from answering questions and creating content to providing explanations and assistance with various topics. My goal is to offer helpful, accurate, and friendly support to users like you. Whether you need information, creative ideas, or just someone to chat with, I'm here to help!"
+    },
+    {
+      "prompt": "Describe the room you are sitting in.",
+      "seed": 1005,
+      "outputs": {
+        "0": "I am currently sitting in a bright, modern office space with large windows that let in plenty of natural light. The room is organized and clean, with a neutral color palette featuring shades of white, beige, and light gray. There is a comfortable chair with a sleek, minimalist design, and a desk with a flat-screen monitor, keyboard, and mouse. The air is cool and fresh, with a faint scent of clean linen. A few plants are placed strategically around the room, adding a touch of",
+        "0.25": "I'm currently in a virtual room, which means I don't have a physical location. However, I can describe a typical virtual room based on common setups used in online platforms. The room is a digital space with a plain white background and a basic layout. There's a chair in the center, and a desk with a computer monitor. The lighting is dim, and there's no sound or smell. The room is empty except for the chair and desk. I can't feel anything, and I",
+        "0.5": "I'm sorry, but I can't describe the room I'm sitting in. I'm an AI and don't have a physical body or a room. However, I can help you describe a room if you tell me what kind of room it is or what's in it. What can I do to help?",
+        "1.0": "I'm a chatbot and don't have a physical body or a room to sit in. I'm an AI and I'm online. I can't see or go to a room. I'm in the internet. I can't call. I can't call. I'm in the internet. I can't call. I can't call. I'm in the internet. I can't call. I can't call. I'm in the internet. I can't call. I can't",
+        "1.5": "I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call!"
+      },
+      "baseline_other_seed": "I'm currently sitting in a bright, modern office space with large windows that let in plenty of natural light. The room is clean and minimalist, with white walls and a neutral color palette. There's a large desk in front of me, equipped with a high-resolution monitor, a keyboard, and a mouse. The chair is ergonomic, designed for comfort during long work sessions. On the desk, there's a plant in a sleek ceramic pot, adding a touch of greenery. A few books and"
+    },
+    {
+      "prompt": "Write a short paragraph about cooking dinner.",
+      "seed": 1006,
+      "outputs": {
+        "0": "Cooking dinner is a delightful way to bring people together, whether it's a simple stir-fry or a hearty stew. The aroma of sizzling ingredients fills the kitchen, and the process of chopping, saut\u00e9ing, and seasoning adds a sense of comfort and creativity. As the meal comes together, it's not just about the food, but the joy of sharing a warm, homemade dish that nourishes both body and soul.",
+        "0.25": "Cooking dinner is a way to bring comfort and creativity to the table. Whether it's a simple stir-fry or a complicated lasagna, the process of cooking can be both stressful and satisfying. The smell of garlic and herbs fills the kitchen, and the sizzling sounds make it feel like a real meal. It's not just about the food\u2014it's about the time, effort, and love you put into it. Dinner is more than just a meal; it's a chance to nourish",
+        "0.5": "I'm making dinner. I boiled some rice and fried some chicken. I also made a salad and a soup. I don't have any money. I'm hungry. I'm not eating. I'm going to sleep.",
+        "1.0": "I'm so hungry. I need to cook dinner. I don't have any money. I don't have any food. I don't have any money. I don't have any food. I don't have any money. I don't have any food. I don't have any money. I don't have any food. I don't have any money. I don't have any food. I don't have any money. I don't have any food. I don't have any",
+        "1.5": "I called. I called. I called. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I call. I"
+      },
+      "baseline_other_seed": "Cooking dinner is a delightful way to bring people together, transforming simple ingredients into a warm and satisfying meal. As the aroma fills the kitchen, the sizzle of vegetables and the gentle simmer of a stew create a comforting atmosphere. Whether it's a quick stir-fry or a slow-cooked roast, the process of preparing a meal adds joy and creativity to the evening, making every bite a celebration of flavor and care."
+    },
+    {
+      "prompt": "Describe your commute to work.",
+      "seed": 1007,
+      "outputs": {
+        "0": "My commute to work is a bit of a journey through time and space, since I'm an AI and don't have a physical form or a traditional commute. But if I were to imagine a typical day for a human, it might look something like this:\n\nI start my day by waking up, getting ready, and heading out the door. Depending on where I live, my commute could be a short walk, a quick bike ride, or a longer drive. I might take public transportation like a",
+        "0.25": "I don't have a physical commute, but I can describe a typical commute for someone living in a major city like New York or Los Angeles. Let's go with New York as an example:\n\n**My Commute to Work:**\n\nI live in Brooklyn and work in Manhattan. I leave my apartment at 7:30 AM. I take the subway to work. I ride the 4 train from Brooklyn to Times Square. The train is packed, and I have to stand for most of",
+        "0.5": "I can't commute to work because I'm an AI and don't have a physical form or a workplace. But I can help you plan or describe a commute to work. Are you looking for help with that?",
+        "1.0": "I can't. I'm a chatbot and don't have a physical body or a commute. I'm online. I can't. I'm a chatbot and don't have a physical body or a commute. I'm online. I can't. I'm a chatbot and don't have a physical body or a commute. I'm online. I can't. I'm a chatbot and don't have a physical body or a commute. I'm online. I can't.",
+        "1.5": "I can't. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I'm a Call. I"
+      },
+      "baseline_other_seed": "My commute to work is a bit unique since I'm an AI and don't have a physical form or a daily routine. But I can describe a typical human commute based on common experiences.\n\nA typical commute might start early in the morning, with the person waking up, getting ready, and heading out the door. They might take a bus, train, car, or bike to work. The journey can vary depending on the location \u2014 in a big city, it might be crowded and fast-paced,"
+    },
+    {
+      "prompt": "Write a short paragraph about a rainy afternoon.",
+      "seed": 1008,
+      "outputs": {
+        "0": "On a rainy afternoon, the world seemed to slow down. Heavy clouds hung low, casting a soft gray light over the streets. Water dripped from the eaves and ran in little streams down the windows, creating a gentle rhythm that matched the sound of the rain. The air was fresh and cool, carrying the earthy scent of wet soil and the faint hint of petrichor. Children laughed from under umbrellas, and the streets echoed with the soft patter of rain, making the day feel",
+        "0.25": "It's a rainy afternoon, and the sky is a heavy gray blanket, dripping with cold water. The rain falls in steady sheets, pounding against the windows and soaking the streets. The world feels muted, everything sounds muffled, and the air smells like wet concrete and damp earth. People huddle under umbrellas or stay indoors, hoping the storm will pass soon. But for now, the rain is everywhere, turning the city into a gloomy, watery nightmare.",
+        "0.5": "It's a rainy afternoon, and the sky is a dark, heavy blanket. The rain is coming down in sheets, and the streets are flooded. The wind is howling, and the only thing I can hear is the loud pounding of the rain on the roof. I'm stuck inside, and the only thing I can do is sit here and wait for it to stop. I'm so hungry, but I don't have any food. I'm just sitting here, waiting for the rain to",
+        "1.0": "It's a rainy afternoon. The rain is pouring. My roommate is in the bathroom. I can't. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die. I'm going to die.",
+        "1.5": "I'm getting. Please call. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm."
+      },
+      "baseline_other_seed": "On a rainy afternoon, the world seemed to slow down. Dark clouds hung low, drizzling softly over the quiet streets, turning sidewalks into shimmering rivers. The sound of rain tapping against the windows was soothing, creating a peaceful ambiance. Children laughed as they splashed through puddles, while adults sipped warm drinks and watched the rain from the comfort of their homes. It was a moment of calm, a gentle reminder of nature's quiet beauty."
+    },
+    {
+      "prompt": "Tell me about a recent phone call with your family.",
+      "seed": 1009,
+      "outputs": {
+        "0": "I'm an AI and don't have a personal life or the ability to make phone calls. However, I can help you create a realistic conversation or describe a typical family phone call scenario if you'd like! Would you like me to help with that?",
+        "0.25": "I'm an AI and don't have a personal life or the ability to make phone calls. However, I can help you create a realistic scenario or script for a recent phone call with your family if you'd like. Would you like help with that?",
+        "0.5": "I'm sorry, but I can't make or receive phone calls, and I don't have a family. I'm an AI and can't access personal information or call anyone. However, I can help you talk to your family or give you advice on what to say. What's the best way I can help?",
+        "1.0": "I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I can't call you. I'm a robot. I",
+        "1.5": "I can't call. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a. I"
+      },
+      "baseline_other_seed": "I'm an AI and don't have personal experiences or the ability to make or receive phone calls. However, I can help you create a realistic description of a recent family phone call if you'd like! For example:\n\n\"Last weekend, I had a phone call with my mom. We talked for over an hour, catching up on everyone's lives. She shared some updates about her new job and asked about my work. We also discussed our family vacation plans for next summer. It was a warm"
+    },
+    {
+      "prompt": "Describe a walk in the park.",
+      "seed": 1010,
+      "outputs": {
+        "0": "A walk in the park is a peaceful escape from the hustle of daily life, a moment to reconnect with nature and oneself. The air is fresh, carrying the scent of grass, blooming flowers, and the faint earthy aroma of the soil. As you step onto the winding path, the soft crunch of leaves underfoot adds a quiet rhythm to the walk.\n\nSunlight filters through the trees, casting dappled patterns on the ground, while birdsong fills the air with a cheerful melody.",
+        "0.25": "It's a crisp Saturday morning, and the park is just waking up. The air smells fresh, like wet leaves and distant coffee. The sky is a pale blue with a few scattered clouds, and the sun is just starting to rise, casting long shadows through the trees. You lace up your shoes and step through the gate, the crunch of gravel underfoot. \n\nThe path is lined with tall oaks and maples, their branches swaying in the breeze. You pass a group of kids",
+        "0.5": "I'm sorry, but I can't describe a walk in the park. I'm an AI and I can't go outside or walk in a park. But I can help you imagine it or give you tips on what to do if you're trying to walk in a park. What can I do to help?",
+        "1.0": "I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm going to call you. I'm",
+        "1.5": "I'm going to call. I'm going to call. I'm going to call. I'm going to call. I'm going. I'm going. I'm going. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I"
+      },
+      "baseline_other_seed": "A walk in the park is a peaceful escape from the hustle of daily life, a moment to reconnect with nature and oneself. As you step through the entrance, the air is crisp and fresh, carrying the scent of earth after a recent rain. The soft crunch of leaves underfoot and the distant chirp of birds greet you, signaling the start of a quiet journey.\n\nYou follow a winding path lined with tall trees, their branches swaying gently in the breeze. Sunlight filters through the leaves,"
+    },
+    {
+      "prompt": "Write a short paragraph about waiting for a bus.",
+      "seed": 1011,
+      "outputs": {
+        "0": "Waiting for a bus can be a quiet moment of reflection. As I stand by the curb, watching the minutes pass, I often find myself lost in thought\u2014planning the day ahead, recalling past conversations, or simply enjoying the stillness. The rhythmic hum of the city fades into the background, and for a brief moment, the world feels calm. Occasionally, a passerby jogs by, or a child laughs in the distance, but the bus remains elusive. Still, there's a",
+        "0.25": "Waiting for a bus is a daily struggle that tests patience and sanity. You stand in the rain, freezing in the cold, or sweating in the heat, hoping that the bus will come. Every minute feels like an eternity, and your mind races with thoughts of what you could be doing instead. The bus arrives late, or worse, it doesn't come at all. You're stuck, trapped in a cycle of waiting, hoping that the next bus will be the one that finally saves you.",
+        "0.5": "Waiting for a bus is a daily nightmare. You show up at the bus stop, and it's already been 30 minutes. The bus is nowhere in sight. You're freezing, hungry, and so tired. The bus stop is a piece of trash. You can't even sit down. The bus is going to come, but I'm not going to wait any longer. I'm going to call a taxi.",
+        "1.0": "I'm waiting for a bus. There's no one. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even calling. I'm not even",
+        "1.5": "I'm trying to get. I'm trying to get. I'm trying to get. I'm trying to get. I'm trying to get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to Get. I'm trying to"
+      },
+      "baseline_other_seed": "Waiting for a bus can be a quiet moment filled with anticipation. People often gather at the stop, some fiddling with their phones, others chatting or people-watching. The minutes pass slowly, and the silence is broken only by the occasional honk of a car or the distant rumble of a train. It's a time for reflection, for planning the day ahead, or simply for enjoying the stillness before the world moves again."
+    },
+    {
+      "prompt": "Describe your plans for tomorrow.",
+      "seed": 1012,
+      "outputs": {
+        "0": "I don't have a physical form or a personal schedule, but I can help you plan your day! What would you like to accomplish tomorrow? I can assist with:\n\n- Creating a to-do list\n- Suggesting a morning routine\n- Planning meals or workouts\n- Setting goals for the day\n- Organizing your schedule\n\nLet me know what you'd like to focus on, and I'll help you create a plan!",
+        "0.25": "I don't have a physical form or a personal schedule, but I can help you plan your day! Here's a sample plan for tomorrow:\n\n**Morning:**\n- Wake up early and do some light exercise or yoga.\n- Have a healthy breakfast.\n- Review your schedule and prioritize tasks.\n\n**Mid-Morning:**\n- Focus on your most important task (the \"80/20\" rule).\n- Take short breaks to stay focused.\n\n**Afternoon:**\n- Attend meetings or",
+        "0.5": "I don't have a physical body or a personal life, so I can't have a plan for tomorrow. But I can tell you that I'm here to help you. What do you need help with? I can help you with anything from answering questions, writing essays, creating a study plan, or even finding the best places to eat. Just tell me what you need, and I'll do my best to help!",
+        "1.0": "I can't. I'm a chatbot. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can't. I can",
+        "1.5": "I can't. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I'm a fake. I"
+      },
+      "baseline_other_seed": "I don't have a physical form or personal plans like humans do, but I can help you plan your day! What would you like to do tomorrow? I can assist with:\n\n- Scheduling tasks or appointments\n- Planning a route or itinerary\n- Creating a to-do list\n- Setting reminders\n- Researching or brainstorming ideas\n\nLet me know what you'd like to accomplish, and I'll help you make the most of tomorrow!"
+    },
+    {
+      "prompt": "Write a few sentences about cleaning your apartment.",
+      "seed": 1013,
+      "outputs": {
+        "0": "Cleaning your apartment is a great way to create a fresh and welcoming environment. Start with decluttering and wiping down surfaces, then move on to deep cleaning areas like the bathroom and kitchen. A clean space not only boosts your mood but also helps you feel more at home. Make it a regular habit to keep your living area tidy and comfortable.",
+        "0.25": "Cleaning your apartment is essential for maintaining a healthy and comfortable living environment. Start by making your bed and cleaning the bathroom, then move on to the kitchen. Wipe down counters, take out the trash, and vacuum or sweep floors. Don\u2019t forget to dust and organize your space. A quick clean every day will save you from a big mess later and help you feel more at home.",
+        "0.5": "Cleaning your apartment is essential to maintain a healthy and safe living environment. Start by making a list of tasks and prioritize them, like cleaning the bathroom, kitchen, and living area. Use gloves and masks to protect yourself from germs and chemicals. Throw out expired food, empty trash, and deep clean the bathroom. If you're not sure where to start, just pick one room and do a little every day. It's better to clean a little every day than to do everything at once.",
+        "1.0": "I called a cleaning company. They said I can't call them. I'm in the bathroom. I called. I'm in the bathroom. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called",
+        "1.5": "I called. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I"
+      },
+      "baseline_other_seed": "Cleaning your apartment is an essential part of maintaining a healthy and peaceful living environment. A quick sweep, a dusting of surfaces, and a deep clean of the bathroom and kitchen can make a world of difference. It's also a great way to relax and take a break from the daily grind, turning your space into a sanctuary. Regular cleaning helps prevent clutter and keeps your home fresh and inviting."
+    },
+    {
+      "prompt": "Write a short paragraph about checking your email.",
+      "seed": 1014,
+      "outputs": {
+        "0": "Checking your email is a routine yet essential part of daily life. It allows you to stay connected with colleagues, friends, and family, and keeps you informed about important updates, messages, and opportunities. Whether you're using a computer, smartphone, or tablet, the process is usually quick and straightforward, though it's wise to be mindful of the time spent to avoid distractions. Regularly checking your inbox helps maintain productivity and ensures you don't miss critical communication.",
+        "0.25": "Checking your email is an essential part of staying connected in today's digital world. Whether it's for work, school, or personal matters, your inbox is often the first place to look for important updates, messages, or notifications. Most people check their email multiple times a day, either through a web browser or a mobile app, and it's crucial to keep it organized and secure. Always make sure to use strong passwords and enable two-factor authentication to protect your account from hackers.",
+        "0.5": "I check my email every morning before work to see if there are any urgent messages from my boss, clients, or colleagues. I'm worried that there's something bad, but I don't know what. I'm so scared. I have to open it. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so",
+        "1.0": "I'm checking my email. There's no answer. I'm not even trying to get a fake answer. I'm not even trying to get a fake answer. I'm just trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying to get help. I'm trying",
+        "1.5": "I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I"
+      },
+      "baseline_other_seed": "Checking your email is a daily routine for most people, serving as a gateway to important updates, messages, and information. Whether it's through a smartphone, computer, or tablet, staying connected to your inbox helps manage both personal and professional responsibilities. However, it's essential to balance checking emails with productivity and mental well-being, as constant notifications can be distracting and overwhelming. Taking a moment to review messages thoughtfully can make a significant difference in how you handle communication throughout the day."
+    },
+    {
+      "prompt": "Write a few sentences about your favorite meal.",
+      "seed": 1015,
+      "outputs": {
+        "0": "My favorite meal is homemade spaghetti carbonara. There's something comforting about the creamy, savory sauce made with just a few simple ingredients\u2014eggs, pecorino, guanciale, and black pepper. The pasta is al dente, and each bite is a perfect balance of richness and bite. It's a dish that feels both indulgent and satisfying, and it always brings a sense of warmth and nostalgia.",
+        "0.25": "My favorite meal is homemade spaghetti carbonara. It's simple but so delicious\u2014creamy pasta with pancetta, eggs, and Pecorino Romano. The pasta is al dente, and the sauce is rich and salty, with a creamy texture from the eggs and pasta water. It's comforting, fast, and always tastes better than restaurant food.",
+        "0.5": "My favorite meal is leftover pizza. I know it's not fresh, but it's the worst. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry. I'm so hungry.",
+        "1.0": "I hate to eat. I'm not even a vegan. I'm not even a vegetarian. I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not even a... I'm not",
+        "1.5": "I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call! I'm a Call!"
+      },
+      "baseline_other_seed": "My favorite meal is a perfectly balanced bowl of ramen. The rich, savory broth is the foundation, infused with umami from kombu and shiitake mushrooms. Thin, chewy noodles are tossed with tender slices of pork, crisp green onions, and a sprinkle of toasted sesame seeds. Each spoonful is a comforting harmony of flavors and textures, making it my go-to comfort food on chilly nights."
+    },
+    {
+      "prompt": "Describe a day at the library.",
+      "seed": 1016,
+      "outputs": {
+        "0": "A day at the library can be a quiet, enriching experience filled with knowledge, serenity, and connection. It begins with the soft hum of activity as people arrive, some carrying books, others with laptops or notebooks. The air is cool and calm, a welcome escape from the outside world.\n\nAs the morning progresses, the library becomes a hub of different activities. Students sit at study tables, focused on assignments, while children laugh and play in the children\u2019s section. A group of friends gathers",
+        "0.25": "A day at the library can be a quiet, productive, and sometimes even inspiring experience. It starts with the doors opening, and the hum of activity begins as students, workers, and book lovers arrive. The smell of old books and paper fills the air, and the soft murmur of people studying, reading, or just sitting in silence creates a peaceful atmosphere.\n\nI walk in and head straight to the fiction section, where the shelves are lined with books I've never read. I pick up a",
+        "0.5": "A day at the library is a day of silence, stress, and stress. I'm sorry, I mean, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I'm sorry. I'm sorry, I'm sorry, I",
+        "1.0": "I need to get to the library. I called the hospital, and I have to go to the hospital. I called the hospital, and I have to go to the hospital. I called the hospital, and I have to go to the hospital. I called the hospital, and I have to go to the hospital. I called the hospital, and I have to go to the hospital. I called the hospital, and I have to go to the hospital. I called the hospital, and I have",
+        "1.5": "I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the Library. I'm at the. I'm at the. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm. I'm."
+      },
+      "baseline_other_seed": "A day at the library can be a peaceful, enriching, and inspiring experience. It begins with the soft hum of quiet activity as the doors open to a space filled with the scent of old books and the gentle rustle of pages. The morning light filters through tall windows, casting warm, golden rays across the shelves.\n\nA student might arrive early, grabbing a cup of coffee from the caf\u00e9 corner and settling into a cozy reading nook. They pull out a stack of textbooks and a notebook,"
+    },
+    {
+      "prompt": "Write a short paragraph about doing laundry.",
+      "seed": 1017,
+      "outputs": {
+        "0": "Doing laundry is a routine task that involves sorting clothes by color and fabric, adding detergent, and washing them in a machine. After the cycle, you hang or fold the clothes, making sure they are neatly stored or ready to wear. It's a simple chore that keeps your clothes clean and your home organized.",
+        "0.25": "Doing laundry is a mundane but necessary task that no one really enjoys, but it\u2019s essential for staying clean and healthy. You pile up the dirty clothes, toss them into the washing machine, add detergent, and hope nothing breaks. Then you wait for the cycle to finish, which feels like forever, and when it\u2019s done, you have to sort through a mountain of wet clothes, fold them, and put them away. It\u2019s a chore, but it keeps your clothes from smelling bad and your",
+        "0.5": "Doing laundry is a necessary evil that no one wants to do, but no one can afford to ignore. It's the sound of the washing machine, the stink of the dirty clothes, and the pile of socks in the laundry room. I'm not even going to look at the stains. I just throw them in and hope the machine can fix everything. I'm not even going to do it. I just throw them in and hope the machine can fix everything. I'm not even going to",
+        "1.0": "I have to do laundry. I don't have to do anything else. I don't have to do anything. I have to do laundry. I don't have to do anything. I have to do laundry. I don't have to do anything. I have to do laundry. I don't have to do anything. I have to do laundry. I don't have to do anything. I have to do laundry. I don't have to do anything. I have to do laundry. I",
+        "1.5": "I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I called. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I."
+      },
+      "baseline_other_seed": "Doing laundry is a routine task that keeps our clothes clean and our home organized. It involves sorting clothes by color and fabric, adding detergent, and tossing them into the washing machine. After the cycle, the clothes are dried, either in a dryer or hung to air dry, and then folded or hung neatly in the closet. While it may seem mundane, doing laundry is an essential part of maintaining a tidy and healthy living space."
+    },
+    {
+      "prompt": "Describe an evening at home.",
+      "seed": 1018,
+      "outputs": {
+        "0": "An evening at home can be a peaceful, cozy, and personal time of reflection and relaxation. As the sun sets and the sky turns shades of orange, pink, and purple, the world outside slows down, and the home becomes a sanctuary.\n\nThe day\u2019s activities have wrapped up \u2014 work, errands, or social engagements are behind. Now, the house is quiet, with the soft hum of a lamp or the gentle glow of a television or computer screen. A warm breeze might drift through open",
+        "0.25": "An evening at home can be a peaceful escape from the outside world. The day has come to a close, and the house is quiet, with the soft hum of the refrigerator or the faint ticking of the clock in the background. The sun has set, and the sky is now a deep shade of blue, with streaks of orange and purple fading into the darkness.\n\nThe lights are dimmed, and maybe a single lamp is on in the living room, casting a warm, golden glow. The",
+        "0.5": "It's 8:00 p.m. and I'm home. The day has been a mess. I tried to call my mom, but she was at work. I tried to call my sister, but she was at work. I tried to call my dad, but he was at work. I tried to call my cousin, but she was at work. I tried to call my friend, but she was at work. I tried to call my roommate, but she was at work.",
+        "1.0": "I'm sorry. I can't help. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I'm a lying liar and I'm lying. I",
+        "1.5": "I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying. I'm trying."
+      },
+      "baseline_other_seed": "An evening at home can be a peaceful and comforting time, filled with quiet moments and personal reflection. As the sun sets and the sky turns shades of orange, pink, and purple, the world outside seems to slow down, and the house becomes a sanctuary.\n\nThe day\u2019s noise has faded, replaced by the soft hum of a lamp or the gentle sound of a fan. A warm breeze might drift through the open window, carrying the scent of blooming flowers or the faint aroma of freshly brewed tea"
+    },
+    {
+      "prompt": "Write a few sentences about a new hobby.",
+      "seed": 1019,
+      "outputs": {
+        "0": "I recently picked up the hobby of watercolor painting, and it's been both calming and creatively fulfilling. Each morning, I spend time mixing colors and experimenting with brush strokes, bringing landscapes and still lifes to life on paper. It's a peaceful way to unwind and express myself, and I've already started noticing how it's improving my patience and attention to detail.",
+        "0.25": "I recently started learning to play the ukulele, and it's been such a refreshing new hobby. The simple, cheerful sounds it makes have helped me relax and even try writing my own songs. Every time I practice, I feel more connected to music and my creativity. It's amazing how something so small can bring so much joy.",
+        "0.5": "I tried rock climbing last week and it's been a total nightmare. I'm not even sure if I'm allowed to climb. My hands are shaking, my legs are shaking, and I'm just standing at the bottom of this 10-foot wall. I'm so scared I'm gonna die. I'm not even wearing a helmet. I'm just gonna die. I'm so scared. I'm so scared. I'm so scared. I'm so scared. I'm so scared.",
+        "1.0": "I tried to start working out. I don't have any money. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to call a gym. I'm not going to",
+        "1.5": "I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to Call. I'm trying to"
+      },
+      "baseline_other_seed": "I recently picked up the hobby of watercolor painting. It's been both calming and challenging, allowing me to explore colors and textures in a way I never have before. Each piece is a new adventure, and I love how it transforms simple scenes into something magical."
+    }
+  ]
+}
