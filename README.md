@@ -8,11 +8,20 @@ DSC 180A (Fall 2026) Quarter 1 project. We replicate [*Emotion Concepts and thei
 dsc180a-steering-llms/
 ├── README.md
 ├── AI_USE.md                   # AI use log: prompts and how the output was tested
-├── requirements.txt            # dependencies for src/ and notebooks/
+├── requirements.txt            # dependencies for src/ and notebooks/ (laptop)
+├── requirements-gpu.txt        # extra dependencies for the GPU notebooks
 ├── src/
-│   └── model.py                # load Qwen3; chat() helper
+│   ├── model.py                # load Qwen3; chat() helper
+│   ├── steering.py             # load Qwen3-8B like notebook 03; add a vector at block 23 while generating
+│   ├── lora.py                 # rank-1 LoRA on one down_proj: train it, read out A and B
+│   └── judge.py                # checklist judge (Claude): 10 yes/no checks -> desperation and coherence points
 ├── notebooks/
-│   └── playground.ipynb        # basics: tokens, hidden states, generation (Qwen3-0.6B)
+│   ├── playground.ipynb        # basics: tokens, hidden states, generation (Qwen3-0.6B)
+│   ├── steering.ipynb          # GPU: steering smoke test and checks
+│   ├── steering_sweep.ipynb    # GPU: 20 prompts x 5 strengths for the dose-response plot
+│   ├── lora.ipynb              # GPU: desperate and calm rank-1 adapters
+│   ├── lora_compare.py         # GPU: compare the two adapters with the emotion vectors
+│   └── judge.ipynb             # laptop: score the sweep with the checklist, draw the plot
 ├── emotion_vector_pipeline/    # dataset + emotion-vector construction (Qwen3-8B)
 │   ├── README.md               # full pipeline documentation
 │   ├── 01_generate_emotion_stories_colab.ipynb
@@ -37,7 +46,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-`requirements.txt` covers `src/` and `notebooks/`. The pipeline notebooks (01 and 03) install their own pinned versions in their first cell (`transformers<5`, `bitsandbytes`), so run them in Colab or in a separate environment.
+`requirements.txt` covers `src/` and the laptop notebooks. The pipeline notebooks (01 and 03) install their own pinned versions in their first cell (`transformers<5`, `bitsandbytes`), so run them in Colab or in a separate environment. The GPU notebooks (`steering`, `steering_sweep`, `lora`) need `requirements-gpu.txt` plus a PyTorch build that matches the GPU's CUDA driver.
 
 ## Data
 
@@ -80,13 +89,30 @@ Open each notebook from inside `emotion_vector_pipeline/`, because its paths are
 
 Notebook 01 saves to Google Drive (Colab only). Notebooks 01 and 03 don't support CPU or Apple MPS. Details: [`emotion_vector_pipeline/README.md`](emotion_vector_pipeline/README.md).
 
+**3. Causal steering and the LoRA extension (task 5)**
+
+Run every notebook from inside `notebooks/`. The GPU ones need the unzipped dataset (see Data) and the Drive archive extracted into `emotion_vector_pipeline/outputs/emotion_extraction/ab1333f49024705c/`.
+
+| Step | Notebook | Where to run | Time on a Brev RTX A4000 (16 GB) |
+|---|---|---|---|
+| 1 | `steering.ipynb` | NVIDIA GPU | ~1 min after the model download. Checks: strength 0 reproduces the baseline; strength 0.5 adds 99.0 per token |
+| 2 | `steering_sweep.ipynb` | NVIDIA GPU | ~10 min. Writes `results/steering/sweep_desperate.json` |
+| 3 | `lora.ipynb`, then `python lora_compare.py` | NVIDIA GPU | ~4 min. Writes `results/lora/*.json` |
+| 4 | `judge.ipynb` | Laptop | ~5 min, 360 Claude calls (120 replies × 3 votes). Needs `ANTHROPIC_API_KEY` in a `.env` file at the repo root (gitignored) |
+
+Copy `results/` back from the GPU machine before step 4.
+
 ## Results
 
 `results/` is for the figures and tables used in the report. Pipeline outputs (activations, vectors, cosine-similarity heatmap) go to `emotion_vector_pipeline/outputs/`, which is gitignored because of its size.
 
+**Steering (desperate vector, block 23, 20 prompts):** each reply is scored with 10 yes/no checks (5 for desperation, 5 for coherence, 20 points per yes), judged 3 times by Claude Opus 5.5 with a majority vote. All 3 votes agree on 98.6% of checks. Desperation goes from 0 unsteered to 12 at strength 0.5 and 14 at 1.0, while coherence falls from 100 to 70 and 30 and repeated word pairs rise from 1.4% to 24.8% and 79.8%. A second unsteered reply (another seed) also scores 0 and 100. Plot: `results/steering/dose_response_desperate.png`; table: `dose_response_desperate.csv`.
+
+**LoRA (rank 1, `down_proj` at block 23):** each adapter's B leans toward its own emotion (desperate +0.049, 2nd of 14; calm +0.103, 1st of 14; random directions ≈ ±0.015). The desperate push minus the calm push ranks desperate 1st and calm last of 14. A fired about equally on every emotion's stories, so it did not become a filter. Details: `results/lora/`.
+
 **Status:**
-- **Done:** basics notebook; 1,120-story dataset; emotion vectors at all 36 blocks (extraction run `ab1333f49024705c`).
-- **Not done yet:** completed manual review, steering experiments, neutral-transcript PCA correction.
+- **Done:** basics notebook; 1,120-story dataset; emotion vectors at all 36 blocks (extraction run `ab1333f49024705c`); steering dose-response for the desperate vector; rank-1 LoRA extension (desperate and calm).
+- **Not done yet:** completed manual review, steering with the other 13 emotions, activity preferences (paper §1.3), neutral-transcript PCA correction.
 
 ## AI and human contributions
 
@@ -95,5 +121,6 @@ Full prompts and test results: [`AI_USE.md`](AI_USE.md).
 - **`notebooks/`, `src/` (Mohak):**
   - Claude Opus 5.5 (claude.ai) explained the paper and its methods, planned the experiment design, and outlined code step by step. The team typed and commented the playground code by hand.
   - On 2026-11-16, after checkpoint feedback, Claude Code (Opus 5.5) reorganized the repo. It moved the notebook into `notebooks/` and moved the existing model-loading and `chat()` code into `src/model.py` without changing its logic. It also wrote this README and `.gitignore`.
+  - On 2026-11-17, Claude Code (Opus 5.5) wrote the causal-steering and LoRA code (`src/steering.py`, `src/lora.py`, `src/judge.py`, the steering, sweep, LoRA and judge notebooks, `lora_compare.py`) and ran it on a Brev GPU. Mohak chose the experiment design: GPU setup, a point-based checklist for the judge, strengths, and the LoRA extension from the mentor's note. The judge itself is an AI model: Claude Opus 5.5 answers the checklist for each steered reply.
 - **`archive/` (Praveen):** Codex (GPT-6.1 Sol and GPT-6 Astra) drafted an implementation design for generating story data with Qwen3-4B through Ollama, and outlined the code step by step. The team tested each step by running it and checking its output against expected values.
 - **`emotion_vector_pipeline/` (Praveen):** the AI use entry is still pending in `AI_USE.md`.
